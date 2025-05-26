@@ -61,6 +61,9 @@ def root():
 def index():
     return render_template("/index.html")
 
+@app.route("/planner.html", methods=["GET"])
+def planner():
+    return render_template("/planner.html")
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
