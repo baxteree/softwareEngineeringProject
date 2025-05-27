@@ -4,8 +4,19 @@
     <h1 class="display-1">Planner</h1>
   </div>
   <div class="row"></div>
-  <button type="Create planner" class="btn btn-primary mb-3">
-    Create planner
-  </button>
+  <details class="drop">
+    <summary class="dropdown-button">Create planner</summary>
+    <form action="/planner.html" method="POST" class="dropdown-form">
+      <label for="option">Choose template</label><br />
+      <select id="option" name="option">
+        <option value="Term">Term</option></select
+      ><br /><br />
+
+      <label for="number">Number of weeks in the planner:</label><br />
+      <input type="number" id="number" name="number" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </details>
 </div>
 {% endblock %}

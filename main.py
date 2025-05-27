@@ -25,7 +25,7 @@ logging.basicConfig(
 app = Flask(__name__)
 app.secret_key = b"_53oi3uriq9pifpff;apl"
 csrf = CSRFProtect(app)
-
+app.config['WTF_CSRF_ENABLED'] = False
 
 # Redirect index.html to domain root for consistent UX
 @app.route("/index", methods=["GET"])
@@ -61,8 +61,12 @@ def root():
 def index():
     return render_template("/index.html")
 
-@app.route("/planner.html", methods=["GET"])
+@app.route("/planner.html", methods=["POST", "GET"])
 def planner():
+    if request.method == "POST":
+        option = request.form.get("option")
+        number = request.form.get("number")
+        print(option, number)
     return render_template("/planner.html")
 
 @app.route("/privacy.html", methods=["GET"])
