@@ -63,11 +63,17 @@ def index():
 
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
+    weeks = []
     if request.method == "POST":
         option = request.form.get("option")
         number = request.form.get("number")
-        print(option, number)
-    return render_template("/planner.html")
+        try:
+            num_weeks = int(number)
+            weeks = [f"Week {i+1}" for i in range(num_weeks)]
+        except (TypeError, ValueError):
+            weeks = []
+        print(option, number, weeks)
+    return render_template("/planner.html", weeks=weeks)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
