@@ -11,12 +11,131 @@
       <select id="option" name="option">
         <option value="Term">Term</option></select
       ><br /><br />
-
       <label for="number">Number of weeks in the planner:</label><br />
       <input type="number" id="number" name="number" /><br /><br />
-
       <input type="submit" value="Submit" />
     </form>
   </details>
+  {% if weeks %}
+  <form action="/planner.html" method="POST">
+    <input
+      type="hidden"
+      name="option"
+      value="{{ request.form.get('option', '') }}"
+    />
+    <input type="hidden" name="number" value="{{ weeks|length }}" />
+    <div class="weeks-list">
+      {% for week in weeks %} {% set week_idx = loop.index0 %}
+      <div style="margin-bottom: 2em">
+        <h2 style="display: inline">{{ week }}</h2>
+        <button type="submit" name="add_note" value="{{ week_idx }}">+</button>
+        <!-- Existing sticky notes for this week -->
+        <div>
+          {% set notes = sticky_notes.get(week_idx, []) %} {% for note in notes
+          %}
+          <div
+            style="
+              border: 2px solid #ffc107;
+              background: #fff8e1;
+              padding: 1em;
+              margin: 0.5em 0;
+              border-radius: 8px;
+              box-shadow: 2px 2px 8px #eee;
+              max-width: 400px;
+            "
+          >
+            {% if edit_note and edit_note[0] == week_idx and edit_note[1] ==
+            loop.index %}
+            <label
+              >Heading:
+              <input
+                type="text"
+                name="edit_heading"
+                value="{{ note.heading }}" /></label
+            ><br />
+            <label
+              >Due date:
+              <input
+                type="date"
+                name="edit_due"
+                value="{{ note.due }}" /></label
+            ><br />
+            <label
+              >Note:<br />
+              <textarea name="edit_note_text" rows="3" cols="40">
+{{ note.note }}</textarea
+              ></label
+            ><br />
+            <button
+              type="submit"
+              name="save_edit"
+              value="{{ week_idx }}_{{ loop.index }}"
+            >
+              Save
+            </button>
+            {% else %}
+            <strong>{{ note.heading }}</strong><br />
+            <em>Due: {{ note.due }}</em><br />
+            <div>{{ note.note }}</div>
+            <button
+              type="submit"
+              name="edit_note"
+              value="{{ week_idx }}_{{ loop.index }}"
+            >
+              Edit
+            </button>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        <!-- Hidden fields to persist sticky notes -->
+        <input
+          type="hidden"
+          name="note_count_{{ loop.index0 }}"
+          value="{{ notes|length }}"
+        />
+        {% for n in range(notes|length) %}
+        <input
+          type="hidden"
+          name="heading_{{ loop.index0 }}_{{ n }}"
+          value="{{ notes[n].heading }}"
+        />
+        <input
+          type="hidden"
+          name="due_{{ loop.index0 }}_{{ n }}"
+          value="{{ notes[n].due }}"
+        />
+        <input
+          type="hidden"
+          name="note_{{ loop.index0 }}_{{ n }}"
+          value="{{ notes[n].note }}"
+        />
+        {% endfor %}
+        <!-- Show add-sticky-note form if requested -->
+        {% if show_form_for == loop.index0 %}
+        <div
+          style="
+            border: 1px dashed #888;
+            padding: 1em;
+            margin: 1em 0;
+            max-width: 400px;
+          "
+        >
+          <label>Heading: <input type="text" name="new_heading" /></label><br />
+          <label>Due date: <input type="date" name="new_due" /></label><br />
+          <label
+            >Note:<br />
+            <textarea name="new_note" rows="3" cols="40"></textarea></label
+          ><br />
+          <button type="submit" name="save_note" value="{{ loop.index0 }}">
+            Save Sticky Note
+          </button>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </form>
+  {% endif %}
 </div>
 {% endblock %}

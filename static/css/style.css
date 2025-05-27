@@ -10,7 +10,7 @@ body {
 .drop {
   width: 250px;
   margin-top: 1rem;
-  font-family: sans-serif;
+  font-family: var(--bs-body-font-family);
 }
 .dropdown-button {
   cursor: pointer;
@@ -29,4 +29,12 @@ body {
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+.weeks-list {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--bs-body-font-family);
 }
