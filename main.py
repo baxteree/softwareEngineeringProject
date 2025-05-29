@@ -63,68 +63,26 @@ def index():
 
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
-    weeks = []
-    sticky_notes = {}  # {week_index: [ {heading, due, note}, ... ]}
-    show_form_for = None
-    edit_note = None  # (week_idx, note_idx) if editing
-
     if request.method == "POST":
-        option = request.form.get("option")
-        number = request.form.get("number")
-        try:
-            num_weeks = int(number)
-            weeks = [f"Week {i+1}" for i in range(num_weeks)]
-        except (TypeError, ValueError):
-            weeks = []
+        # Get planner details
+        start_date = request.form.get("start_date")
+        num_weeks = request.form.get("num_weeks")
 
-        # Load existing sticky notes from hidden fields
-        for i in range(len(weeks)):
-            sticky_notes[i] = []
-            note_count = int(request.form.get(f"note_count_{i}", 0))
-            for j in range(note_count):
-                heading = request.form.get(f"heading_{i}_{j}", "")
-                due = request.form.get(f"due_{i}_{j}", "")
-                note = request.form.get(f"note_{i}_{j}", "")
-                sticky_notes[i].append({"heading": heading, "due": due, "note": note})
+        # Get task details
+        title = request.form.get("title")
+        description = request.form.get("description")
+        due_date = request.form.get("due_date")
 
-        # If user pressed "+" to add a sticky note
-        add_note = request.form.get("add_note")
-        if add_note is not None:
-            show_form_for = int(add_note)
+        # Print to console so you can check it worked
+        print(f"Planner Start Date: {start_date}")
+        print(f"Planner Weeks: {num_weeks}")
+        print(f"Task Title: {title}")
+        print(f"Task Description: {description}")
+        print(f"Task Due Date: {due_date}")
 
-        # If user submitted a new sticky note
-        save_note = request.form.get("save_note")
-        if save_note is not None:
-            week_idx = int(save_note)
-            heading = request.form.get("new_heading", "")
-            due = request.form.get("new_due", "")
-            note = request.form.get("new_note", "")
-            sticky_notes[week_idx].append({"heading": heading, "due": due, "note": note})
-
-        # If user pressed "Edit" on a sticky note
-        edit_note_val = request.form.get("edit_note")
-        if edit_note_val is not None:
-            week_idx, note_idx = map(int, edit_note_val.split("_"))
-            edit_note = (week_idx, note_idx)
-
-        # If user pressed "Save Edit" on a sticky note
-        save_edit_val = request.form.get("save_edit")
-        if save_edit_val is not None:
-            week_idx, note_idx = map(int, save_edit_val.split("_"))
-            heading = request.form.get("edit_heading", "")
-            due = request.form.get("edit_due", "")
-            note = request.form.get("edit_note_text", "")
-            # Defensive: only update if index exists
-            if week_idx in sticky_notes and 0 <= note_idx < len(sticky_notes[week_idx]):
-                sticky_notes[week_idx][note_idx] = {"heading": heading, "due": due, "note": note}
-
-    return render_template(
-        "/planner.html",
-        weeks=weeks,
-        sticky_notes=sticky_notes,
-        show_form_for=show_form_for,
-        edit_note=edit_note,
-    )
+        # Do something with this data (e.g. create a Task object)
+        return "Form submitted successfully!"  # temporary response
+    return render_template("/planner.html")
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
