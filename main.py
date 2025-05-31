@@ -8,6 +8,9 @@ from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
 
+from planner_handling import Planner, Task
+from data_handing import retrieve_planner_data, insert_planner_data
+
 import userManagement as dbHandler
 
 # Code snippet for logging a message
@@ -80,9 +83,32 @@ def planner():
         print(f"Task Description: {description}")
         print(f"Task Due Date: {due_date}")
 
-        # Do something with this data (e.g. create a Task object)
-        return "Form submitted successfully!"  # temporary response
-    return render_template("/planner.html")
+        # Save data to the database
+        
+        # TODO Use temporary ID 1 for testing purposes (change later)
+        insert_planner_data(1, start_date, num_weeks)
+
+        # Create a planner with the given start date and number of weeks
+        planner_ = Planner(start_date, num_weeks)
+        weeks = planner_.create_weeks()
+
+        return render_template("/planner.html", weeks=weeks)
+
+    if request.method == "GET":
+        # Retrieve planner data from the database if it exists
+        
+        # TODO Use temporary ID 1 for testing purposes (change later)
+        data = retrieve_planner_data(1)
+        if data is not None:
+            num_weeks = data[0][1]
+            start_date = data[0][2]
+
+            planner_ = Planner(start_date, num_weeks)
+            weeks = planner_.create_weeks()
+
+            return render_template("/planner.html", weeks=weeks)
+
+    return render_template("/planner.html", weeks=None)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():

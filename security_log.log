@@ -1408,3 +1408,403 @@
 2025-05-29 09:58:18,534  * Restarting with stat
 2025-05-29 09:58:18,789  * Debugger is active!
 2025-05-29 09:58:18,790  * Debugger PIN: 121-555-993
+2025-05-30 00:14:58,184 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.60:5000
+2025-05-30 00:14:58,216 [33mPress CTRL+C to quit[0m
+2025-05-30 00:14:58,218  * Restarting with stat
+2025-05-30 00:14:58,502  * Debugger is active!
+2025-05-30 00:14:58,507  * Debugger PIN: 574-838-642
+2025-05-30 00:15:01,800 127.0.0.1 - - [30/May/2025 00:15:01] "GET / HTTP/1.1" 200 -
+2025-05-30 00:15:02,035 127.0.0.1 - - [30/May/2025 00:15:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:02,035 127.0.0.1 - - [30/May/2025 00:15:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:02,040 127.0.0.1 - - [30/May/2025 00:15:02] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:02,323 127.0.0.1 - - [30/May/2025 00:15:02] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:02,477 127.0.0.1 - - [30/May/2025 00:15:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:02,561 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 00:15:02,561 127.0.0.1 - - [30/May/2025 00:15:02] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 00:15:47,727 127.0.0.1 - - [30/May/2025 00:15:47] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 00:15:47,888 127.0.0.1 - - [30/May/2025 00:15:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:47,892 127.0.0.1 - - [30/May/2025 00:15:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:47,902 127.0.0.1 - - [30/May/2025 00:15:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:47,938 127.0.0.1 - - [30/May/2025 00:15:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:47,964 127.0.0.1 - - [30/May/2025 00:15:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:48,948 127.0.0.1 - - [30/May/2025 00:15:48] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-05-30 00:15:49,055 127.0.0.1 - - [30/May/2025 00:15:49] "GET / HTTP/1.1" 200 -
+2025-05-30 00:15:49,113 127.0.0.1 - - [30/May/2025 00:15:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:49,121 127.0.0.1 - - [30/May/2025 00:15:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:15:49,124 127.0.0.1 - - [30/May/2025 00:15:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:49,158 127.0.0.1 - - [30/May/2025 00:15:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:49,187 127.0.0.1 - - [30/May/2025 00:15:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:15:49,243 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/planner.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 00:15:49,244 127.0.0.1 - - [30/May/2025 00:15:49] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 00:16:45,631 127.0.0.1 - - [30/May/2025 00:16:45] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 00:16:45,691 127.0.0.1 - - [30/May/2025 00:16:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:16:45,693 127.0.0.1 - - [30/May/2025 00:16:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:16:45,696 127.0.0.1 - - [30/May/2025 00:16:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:16:45,737 127.0.0.1 - - [30/May/2025 00:16:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:16:45,770 127.0.0.1 - - [30/May/2025 00:16:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:21:06,384  * Detected change in '/workspaces/softwareEngineeringProject/planner_handling.py', reloading
+2025-05-30 00:21:06,419  * Restarting with stat
+2025-05-30 00:21:06,667  * Debugger is active!
+2025-05-30 00:21:06,668  * Debugger PIN: 574-838-642
+2025-05-30 00:21:45,826 127.0.0.1 - - [30/May/2025 00:21:45] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 00:21:45,974 127.0.0.1 - - [30/May/2025 00:21:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-30 00:22:05,076 127.0.0.1 - - [30/May/2025 00:22:05] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 00:22:26,568 127.0.0.1 - - [30/May/2025 00:22:26] "GET / HTTP/1.1" 200 -
+2025-05-30 00:22:26,614 127.0.0.1 - - [30/May/2025 00:22:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:22:26,617 127.0.0.1 - - [30/May/2025 00:22:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:26,692 127.0.0.1 - - [30/May/2025 00:22:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:22:26,741 127.0.0.1 - - [30/May/2025 00:22:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:26,857 127.0.0.1 - - [30/May/2025 00:22:26] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:26,925 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 00:22:26,925 127.0.0.1 - - [30/May/2025 00:22:26] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 00:22:28,103 127.0.0.1 - - [30/May/2025 00:22:28] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 00:22:28,146 127.0.0.1 - - [30/May/2025 00:22:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:22:28,149 127.0.0.1 - - [30/May/2025 00:22:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:22:28,152 127.0.0.1 - - [30/May/2025 00:22:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:28,194 127.0.0.1 - - [30/May/2025 00:22:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:28,225 127.0.0.1 - - [30/May/2025 00:22:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:22:35,848 127.0.0.1 - - [30/May/2025 00:22:35] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 00:24:28,689 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.60:5000
+2025-05-30 00:24:28,689 [33mPress CTRL+C to quit[0m
+2025-05-30 00:24:28,690  * Restarting with stat
+2025-05-30 00:24:28,925  * Debugger is active!
+2025-05-30 00:24:28,926  * Debugger PIN: 699-963-232
+2025-05-30 00:24:29,982 127.0.0.1 - - [30/May/2025 00:24:29] "GET / HTTP/1.1" 200 -
+2025-05-30 00:24:30,164 127.0.0.1 - - [30/May/2025 00:24:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:24:30,168 127.0.0.1 - - [30/May/2025 00:24:30] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:24:30,170 127.0.0.1 - - [30/May/2025 00:24:30] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:24:30,285 127.0.0.1 - - [30/May/2025 00:24:30] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:24:30,391 127.0.0.1 - - [30/May/2025 00:24:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:24:30,474 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 00:24:30,474 127.0.0.1 - - [30/May/2025 00:24:30] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 00:24:31,282 127.0.0.1 - - [30/May/2025 00:24:31] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 00:24:31,329 127.0.0.1 - - [30/May/2025 00:24:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 00:24:31,331 127.0.0.1 - - [30/May/2025 00:24:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 00:24:31,334 127.0.0.1 - - [30/May/2025 00:24:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 00:24:31,374 127.0.0.1 - - [30/May/2025 00:24:31] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 00:24:31,399 127.0.0.1 - - [30/May/2025 00:24:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 00:25:14,343 127.0.0.1 - - [30/May/2025 00:25:14] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 00:25:36,685 127.0.0.1 - - [30/May/2025 00:25:36] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:07:46,162 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.168:5000
+2025-05-30 01:07:46,178 [33mPress CTRL+C to quit[0m
+2025-05-30 01:07:46,179  * Restarting with stat
+2025-05-30 01:07:46,419  * Debugger is active!
+2025-05-30 01:07:46,427  * Debugger PIN: 313-558-597
+2025-05-30 01:07:50,308 127.0.0.1 - - [30/May/2025 01:07:50] "GET / HTTP/1.1" 200 -
+2025-05-30 01:07:50,509 127.0.0.1 - - [30/May/2025 01:07:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:07:50,510 127.0.0.1 - - [30/May/2025 01:07:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:07:50,510 127.0.0.1 - - [30/May/2025 01:07:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:07:50,643 127.0.0.1 - - [30/May/2025 01:07:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:07:50,751 127.0.0.1 - - [30/May/2025 01:07:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:07:50,834 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 01:07:50,834 127.0.0.1 - - [30/May/2025 01:07:50] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 01:07:54,612 127.0.0.1 - - [30/May/2025 01:07:54] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:07:54,729 127.0.0.1 - - [30/May/2025 01:07:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:07:54,738 127.0.0.1 - - [30/May/2025 01:07:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:07:54,742 127.0.0.1 - - [30/May/2025 01:07:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:07:54,780 127.0.0.1 - - [30/May/2025 01:07:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:07:54,807 127.0.0.1 - - [30/May/2025 01:07:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:10:18,474  * Detected change in '/workspaces/softwareEngineeringProject/planner_handling.py', reloading
+2025-05-30 01:10:18,519  * Restarting with stat
+2025-05-30 01:10:18,763  * Debugger is active!
+2025-05-30 01:10:18,763  * Debugger PIN: 313-558-597
+2025-05-30 01:53:07,609 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.168:5000
+2025-05-30 01:53:07,609 [33mPress CTRL+C to quit[0m
+2025-05-30 01:53:07,609  * Restarting with stat
+2025-05-30 01:53:07,850  * Debugger is active!
+2025-05-30 01:53:07,850  * Debugger PIN: 313-558-597
+2025-05-30 01:53:08,554 127.0.0.1 - - [30/May/2025 01:53:08] "GET / HTTP/1.1" 200 -
+2025-05-30 01:53:08,774 127.0.0.1 - - [30/May/2025 01:53:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:53:08,782 127.0.0.1 - - [30/May/2025 01:53:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:53:08,787 127.0.0.1 - - [30/May/2025 01:53:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:08,916 127.0.0.1 - - [30/May/2025 01:53:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:09,026 127.0.0.1 - - [30/May/2025 01:53:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:09,113 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 01:53:09,114 127.0.0.1 - - [30/May/2025 01:53:09] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 01:53:10,825 127.0.0.1 - - [30/May/2025 01:53:10] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:53:10,873 127.0.0.1 - - [30/May/2025 01:53:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:53:10,876 127.0.0.1 - - [30/May/2025 01:53:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:10,878 127.0.0.1 - - [30/May/2025 01:53:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:53:10,918 127.0.0.1 - - [30/May/2025 01:53:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:10,946 127.0.0.1 - - [30/May/2025 01:53:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:53:18,779 127.0.0.1 - - [30/May/2025 01:53:18] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 01:53:18,816 127.0.0.1 - - [30/May/2025 01:53:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-30 01:53:41,394 127.0.0.1 - - [30/May/2025 01:53:41] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:53:55,106 127.0.0.1 - - [30/May/2025 01:53:55] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 01:54:14,442 127.0.0.1 - - [30/May/2025 01:54:14] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:55:08,435  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-05-30 01:55:08,469  * Restarting with stat
+2025-05-30 01:55:08,728  * Debugger is active!
+2025-05-30 01:55:08,729  * Debugger PIN: 313-558-597
+2025-05-30 01:58:32,840  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-05-30 01:58:32,875  * Restarting with stat
+2025-05-30 01:58:33,121  * Debugger is active!
+2025-05-30 01:58:33,121  * Debugger PIN: 313-558-597
+2025-05-30 01:58:46,895  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-05-30 01:58:46,932  * Restarting with stat
+2025-05-30 01:58:47,196  * Debugger is active!
+2025-05-30 01:58:47,196  * Debugger PIN: 313-558-597
+2025-05-30 01:58:52,334  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-05-30 01:58:52,371  * Restarting with stat
+2025-05-30 01:58:52,618  * Debugger is active!
+2025-05-30 01:58:52,618  * Debugger PIN: 313-558-597
+2025-05-30 01:59:39,047 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.168:5000
+2025-05-30 01:59:39,047 [33mPress CTRL+C to quit[0m
+2025-05-30 01:59:39,048  * Restarting with stat
+2025-05-30 01:59:39,293  * Debugger is active!
+2025-05-30 01:59:39,294  * Debugger PIN: 313-558-597
+2025-05-30 01:59:40,276 127.0.0.1 - - [30/May/2025 01:59:40] "GET / HTTP/1.1" 200 -
+2025-05-30 01:59:40,450 127.0.0.1 - - [30/May/2025 01:59:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:40,455 127.0.0.1 - - [30/May/2025 01:59:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:40,470 127.0.0.1 - - [30/May/2025 01:59:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:40,591 127.0.0.1 - - [30/May/2025 01:59:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:40,692 127.0.0.1 - - [30/May/2025 01:59:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:40,777 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-30 01:59:40,778 127.0.0.1 - - [30/May/2025 01:59:40] "POST /csp_report HTTP/1.1" 200 -
+2025-05-30 01:59:44,929 127.0.0.1 - - [30/May/2025 01:59:44] "GET /planner.html HTTP/1.1" 200 -
+2025-05-30 01:59:44,974 127.0.0.1 - - [30/May/2025 01:59:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:44,977 127.0.0.1 - - [30/May/2025 01:59:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:44,980 127.0.0.1 - - [30/May/2025 01:59:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:45,056 127.0.0.1 - - [30/May/2025 01:59:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:45,082 127.0.0.1 - - [30/May/2025 01:59:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:54,938 127.0.0.1 - - [30/May/2025 01:59:54] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 01:59:54,989 127.0.0.1 - - [30/May/2025 01:59:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:54,992 127.0.0.1 - - [30/May/2025 01:59:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:54,996 127.0.0.1 - - [30/May/2025 01:59:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 01:59:55,032 127.0.0.1 - - [30/May/2025 01:59:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 01:59:55,057 127.0.0.1 - - [30/May/2025 01:59:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:07,560 127.0.0.1 - - [30/May/2025 02:00:07] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 02:00:07,606 127.0.0.1 - - [30/May/2025 02:00:07] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:07,608 127.0.0.1 - - [30/May/2025 02:00:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 02:00:07,611 127.0.0.1 - - [30/May/2025 02:00:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 02:00:07,645 127.0.0.1 - - [30/May/2025 02:00:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:07,670 127.0.0.1 - - [30/May/2025 02:00:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:24,657 127.0.0.1 - - [30/May/2025 02:00:24] "POST /planner.html HTTP/1.1" 200 -
+2025-05-30 02:00:24,705 127.0.0.1 - - [30/May/2025 02:00:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-30 02:00:24,709 127.0.0.1 - - [30/May/2025 02:00:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-30 02:00:24,710 127.0.0.1 - - [30/May/2025 02:00:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:24,744 127.0.0.1 - - [30/May/2025 02:00:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-30 02:00:24,769 127.0.0.1 - - [30/May/2025 02:00:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:13,621 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.27:5000
+2025-05-31 09:02:13,621 [33mPress CTRL+C to quit[0m
+2025-05-31 09:02:13,622  * Restarting with stat
+2025-05-31 09:02:13,873  * Debugger is active!
+2025-05-31 09:02:13,881  * Debugger PIN: 890-079-341
+2025-05-31 09:02:18,728 127.0.0.1 - - [31/May/2025 09:02:18] "GET / HTTP/1.1" 200 -
+2025-05-31 09:02:18,996 127.0.0.1 - - [31/May/2025 09:02:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:18,996 127.0.0.1 - - [31/May/2025 09:02:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:02:18,996 127.0.0.1 - - [31/May/2025 09:02:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:02:19,184 127.0.0.1 - - [31/May/2025 09:02:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:19,334 127.0.0.1 - - [31/May/2025 09:02:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:19,588 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://github.com/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:02:19,588 127.0.0.1 - - [31/May/2025 09:02:19] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:02:33,409  * Detected change in '/workspaces/softwareEngineeringProject/data_handing.py', reloading
+2025-05-31 09:02:33,444  * Restarting with stat
+2025-05-31 09:02:33,704  * Debugger is active!
+2025-05-31 09:02:33,704  * Debugger PIN: 890-079-341
+2025-05-31 09:02:34,777 127.0.0.1 - - [31/May/2025 09:02:34] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:02:34,936 127.0.0.1 - - [31/May/2025 09:02:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:02:34,937 127.0.0.1 - - [31/May/2025 09:02:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:02:34,940 127.0.0.1 - - [31/May/2025 09:02:34] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:35,014 127.0.0.1 - - [31/May/2025 09:02:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:35,075 127.0.0.1 - - [31/May/2025 09:02:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:44,540 127.0.0.1 - - [31/May/2025 09:02:44] "[35m[1mPOST /planner.html HTTP/1.1[0m" 500 -
+2025-05-31 09:02:44,609 127.0.0.1 - - [31/May/2025 09:02:44] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-31 09:02:44,612 127.0.0.1 - - [31/May/2025 09:02:44] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:02:44,685 127.0.0.1 - - [31/May/2025 09:02:44] "GET /planner.html?__debugger__=yes&cmd=resource&f=console.png&s=9ssTL9n6ttzUag8LvEDM HTTP/1.1" 200 -
+2025-05-31 09:02:44,752 127.0.0.1 - - [31/May/2025 09:02:44] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-31 09:02:58,805  * Detected change in '/workspaces/softwareEngineeringProject/data_handing.py', reloading
+2025-05-31 09:02:58,839  * Restarting with stat
+2025-05-31 09:02:59,093  * Debugger is active!
+2025-05-31 09:02:59,094  * Debugger PIN: 890-079-341
+2025-05-31 09:03:02,838 127.0.0.1 - - [31/May/2025 09:03:02] "[35m[1mPOST /planner.html HTTP/1.1[0m" 500 -
+2025-05-31 09:03:02,916 127.0.0.1 - - [31/May/2025 09:03:02] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-31 09:03:02,925 127.0.0.1 - - [31/May/2025 09:03:02] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:03:02,989 127.0.0.1 - - [31/May/2025 09:03:02] "GET /planner.html?__debugger__=yes&cmd=resource&f=console.png&s=MwBeTtlSzGyCaeUo8Wpd HTTP/1.1" 200 -
+2025-05-31 09:03:03,062 127.0.0.1 - - [31/May/2025 09:03:03] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-31 09:03:35,996  * Detected change in '/workspaces/softwareEngineeringProject/data_handing.py', reloading
+2025-05-31 09:03:36,035  * Restarting with stat
+2025-05-31 09:03:36,280  * Debugger is active!
+2025-05-31 09:03:36,280  * Debugger PIN: 890-079-341
+2025-05-31 09:03:39,085 127.0.0.1 - - [31/May/2025 09:03:39] "POST /planner.html HTTP/1.1" 200 -
+2025-05-31 09:03:39,180 127.0.0.1 - - [31/May/2025 09:03:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:03:39,182 127.0.0.1 - - [31/May/2025 09:03:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:03:39,184 127.0.0.1 - - [31/May/2025 09:03:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:03:39,269 127.0.0.1 - - [31/May/2025 09:03:39] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:03:39,335 127.0.0.1 - - [31/May/2025 09:03:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:02,291 127.0.0.1 - - [31/May/2025 09:04:02] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-05-31 09:04:02,628 127.0.0.1 - - [31/May/2025 09:04:02] "GET / HTTP/1.1" 200 -
+2025-05-31 09:04:02,731 127.0.0.1 - - [31/May/2025 09:04:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:02,735 127.0.0.1 - - [31/May/2025 09:04:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:02,736 127.0.0.1 - - [31/May/2025 09:04:02] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:02,821 127.0.0.1 - - [31/May/2025 09:04:02] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:02,886 127.0.0.1 - - [31/May/2025 09:04:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:03,005 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/planner.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:04:03,005 127.0.0.1 - - [31/May/2025 09:04:03] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:04:03,755 127.0.0.1 - - [31/May/2025 09:04:03] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:04:03,841 127.0.0.1 - - [31/May/2025 09:04:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:03,845 127.0.0.1 - - [31/May/2025 09:04:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:03,847 127.0.0.1 - - [31/May/2025 09:04:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:03,922 127.0.0.1 - - [31/May/2025 09:04:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:03,987 127.0.0.1 - - [31/May/2025 09:04:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:06,923 127.0.0.1 - - [31/May/2025 09:04:06] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:04:07,017 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:07,020 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:07,023 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:07,092 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:07,157 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:07,231 127.0.0.1 - - [31/May/2025 09:04:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,141 127.0.0.1 - - [31/May/2025 09:04:09] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-05-31 09:04:09,199 127.0.0.1 - - [31/May/2025 09:04:09] "GET / HTTP/1.1" 200 -
+2025-05-31 09:04:09,272 127.0.0.1 - - [31/May/2025 09:04:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,292 127.0.0.1 - - [31/May/2025 09:04:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,298 127.0.0.1 - - [31/May/2025 09:04:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,366 127.0.0.1 - - [31/May/2025 09:04:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,435 127.0.0.1 - - [31/May/2025 09:04:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:04:09,550 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/planner.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:04:09,550 127.0.0.1 - - [31/May/2025 09:04:09] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:24:44,555 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.27:5000
+2025-05-31 09:24:44,556 [33mPress CTRL+C to quit[0m
+2025-05-31 09:24:44,556  * Restarting with stat
+2025-05-31 09:24:44,794  * Debugger is active!
+2025-05-31 09:24:44,794  * Debugger PIN: 890-079-341
+2025-05-31 09:24:47,278 127.0.0.1 - - [31/May/2025 09:24:47] "GET / HTTP/1.1" 200 -
+2025-05-31 09:24:47,523 127.0.0.1 - - [31/May/2025 09:24:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:24:47,524 127.0.0.1 - - [31/May/2025 09:24:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:24:47,527 127.0.0.1 - - [31/May/2025 09:24:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:24:47,795 127.0.0.1 - - [31/May/2025 09:24:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:24:47,961 127.0.0.1 - - [31/May/2025 09:24:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:24:48,535 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:24:48,536 127.0.0.1 - - [31/May/2025 09:24:48] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:24:54,329 127.0.0.1 - - [31/May/2025 09:24:54] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:24:54,421 127.0.0.1 - - [31/May/2025 09:24:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:24:54,425 127.0.0.1 - - [31/May/2025 09:24:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:24:54,429 127.0.0.1 - - [31/May/2025 09:24:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:24:54,506 127.0.0.1 - - [31/May/2025 09:24:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:24:54,577 127.0.0.1 - - [31/May/2025 09:24:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:25:07,336 127.0.0.1 - - [31/May/2025 09:25:07] "[35m[1mPOST /planner.html HTTP/1.1[0m" 500 -
+2025-05-31 09:25:07,424 127.0.0.1 - - [31/May/2025 09:25:07] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:25:07,426 127.0.0.1 - - [31/May/2025 09:25:07] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-31 09:25:07,502 127.0.0.1 - - [31/May/2025 09:25:07] "GET /planner.html?__debugger__=yes&cmd=resource&f=console.png&s=jDOYS2yiUNGaWlZtrRin HTTP/1.1" 200 -
+2025-05-31 09:25:07,598 127.0.0.1 - - [31/May/2025 09:25:07] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-31 09:28:01,896  * Detected change in '/workspaces/softwareEngineeringProject/data_handing.py', reloading
+2025-05-31 09:28:01,941  * Restarting with stat
+2025-05-31 09:28:02,190  * Debugger is active!
+2025-05-31 09:28:02,190  * Debugger PIN: 890-079-341
+2025-05-31 09:28:18,193 127.0.0.1 - - [31/May/2025 09:28:18] "POST /planner.html HTTP/1.1" 200 -
+2025-05-31 09:28:18,441 127.0.0.1 - - [31/May/2025 09:28:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:18,461 127.0.0.1 - - [31/May/2025 09:28:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:18,472 127.0.0.1 - - [31/May/2025 09:28:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:18,647 127.0.0.1 - - [31/May/2025 09:28:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:18,809 127.0.0.1 - - [31/May/2025 09:28:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:30,820 127.0.0.1 - - [31/May/2025 09:28:30] "POST /planner.html HTTP/1.1" 200 -
+2025-05-31 09:28:30,913 127.0.0.1 - - [31/May/2025 09:28:30] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:30,915 127.0.0.1 - - [31/May/2025 09:28:30] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:30,917 127.0.0.1 - - [31/May/2025 09:28:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:30,994 127.0.0.1 - - [31/May/2025 09:28:30] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:31,056 127.0.0.1 - - [31/May/2025 09:28:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,195 127.0.0.1 - - [31/May/2025 09:28:40] "GET / HTTP/1.1" 200 -
+2025-05-31 09:28:40,282 127.0.0.1 - - [31/May/2025 09:28:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,286 127.0.0.1 - - [31/May/2025 09:28:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,289 127.0.0.1 - - [31/May/2025 09:28:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,391 127.0.0.1 - - [31/May/2025 09:28:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,466 127.0.0.1 - - [31/May/2025 09:28:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:40,620 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:28:40,620 127.0.0.1 - - [31/May/2025 09:28:40] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:28:41,587 127.0.0.1 - - [31/May/2025 09:28:41] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:28:41,687 127.0.0.1 - - [31/May/2025 09:28:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:41,694 127.0.0.1 - - [31/May/2025 09:28:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:41,698 127.0.0.1 - - [31/May/2025 09:28:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:28:41,785 127.0.0.1 - - [31/May/2025 09:28:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:28:41,855 127.0.0.1 - - [31/May/2025 09:28:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:29:51,340  * Detected change in '/workspaces/softwareEngineeringProject/data_handing.py', reloading
+2025-05-31 09:29:51,374  * Restarting with stat
+2025-05-31 09:29:51,622  * Debugger is active!
+2025-05-31 09:29:51,623  * Debugger PIN: 890-079-341
+2025-05-31 09:34:24,967 127.0.0.1 - - [31/May/2025 09:34:24] "[35m[1mGET /planner.html HTTP/1.1[0m" 500 -
+2025-05-31 09:34:25,150 127.0.0.1 - - [31/May/2025 09:34:25] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-31 09:34:25,151 127.0.0.1 - - [31/May/2025 09:34:25] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:34:25,309 127.0.0.1 - - [31/May/2025 09:34:25] "GET /planner.html?__debugger__=yes&cmd=resource&f=console.png&s=Bd2EBLYixdVcnNv080NV HTTP/1.1" 200 -
+2025-05-31 09:34:25,447 127.0.0.1 - - [31/May/2025 09:34:25] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-31 09:34:53,509 127.0.0.1 - - [31/May/2025 09:34:53] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,131 127.0.0.1 - - [31/May/2025 09:34:54] "GET / HTTP/1.1" 200 -
+2025-05-31 09:34:54,221 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,227 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,292 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,363 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,421 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,481 127.0.0.1 - - [31/May/2025 09:34:54] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-05-31 09:34:54,544 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:34:54,545 127.0.0.1 - - [31/May/2025 09:34:54] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:34:55,139 127.0.0.1 - - [31/May/2025 09:34:55] "[35m[1mGET /planner.html HTTP/1.1[0m" 500 -
+2025-05-31 09:34:55,214 127.0.0.1 - - [31/May/2025 09:34:55] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:34:55,218 127.0.0.1 - - [31/May/2025 09:34:55] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-31 09:34:55,275 127.0.0.1 - - [31/May/2025 09:34:55] "[36mGET /planner.html?__debugger__=yes&cmd=resource&f=console.png&s=Bd2EBLYixdVcnNv080NV HTTP/1.1[0m" 304 -
+2025-05-31 09:35:48,807 127.0.0.1 - - [31/May/2025 09:35:48] "GET / HTTP/1.1" 200 -
+2025-05-31 09:35:48,976 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:35:48,976 127.0.0.1 - - [31/May/2025 09:35:48] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:35:59,831 127.0.0.1 - - [31/May/2025 09:35:59] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:35:59,926 127.0.0.1 - - [31/May/2025 09:35:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:35:59,935 127.0.0.1 - - [31/May/2025 09:35:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:35:59,939 127.0.0.1 - - [31/May/2025 09:35:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:00,027 127.0.0.1 - - [31/May/2025 09:36:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:00,116 127.0.0.1 - - [31/May/2025 09:36:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,063 127.0.0.1 - - [31/May/2025 09:36:16] "GET / HTTP/1.1" 200 -
+2025-05-31 09:36:16,239 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:36:16,240 127.0.0.1 - - [31/May/2025 09:36:16] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:36:16,664 127.0.0.1 - - [31/May/2025 09:36:16] "GET / HTTP/1.1" 200 -
+2025-05-31 09:36:16,736 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,753 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,759 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,824 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,883 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:16,950 127.0.0.1 - - [31/May/2025 09:36:16] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-05-31 09:36:17,014 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:36:17,014 127.0.0.1 - - [31/May/2025 09:36:17] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:36:17,678 127.0.0.1 - - [31/May/2025 09:36:17] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:36:17,769 127.0.0.1 - - [31/May/2025 09:36:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:17,772 127.0.0.1 - - [31/May/2025 09:36:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:17,775 127.0.0.1 - - [31/May/2025 09:36:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:17,838 127.0.0.1 - - [31/May/2025 09:36:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:17,893 127.0.0.1 - - [31/May/2025 09:36:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:36,255 127.0.0.1 - - [31/May/2025 09:36:36] "POST /planner.html HTTP/1.1" 200 -
+2025-05-31 09:36:36,363 127.0.0.1 - - [31/May/2025 09:36:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:36,368 127.0.0.1 - - [31/May/2025 09:36:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:36,371 127.0.0.1 - - [31/May/2025 09:36:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:36,437 127.0.0.1 - - [31/May/2025 09:36:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:36,505 127.0.0.1 - - [31/May/2025 09:36:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,248 127.0.0.1 - - [31/May/2025 09:36:43] "GET / HTTP/1.1" 200 -
+2025-05-31 09:36:43,321 127.0.0.1 - - [31/May/2025 09:36:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,332 127.0.0.1 - - [31/May/2025 09:36:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,340 127.0.0.1 - - [31/May/2025 09:36:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,402 127.0.0.1 - - [31/May/2025 09:36:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,458 127.0.0.1 - - [31/May/2025 09:36:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:43,615 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-05-31 09:36:43,615 127.0.0.1 - - [31/May/2025 09:36:43] "POST /csp_report HTTP/1.1" 200 -
+2025-05-31 09:36:44,369 127.0.0.1 - - [31/May/2025 09:36:44] "GET /planner.html HTTP/1.1" 200 -
+2025-05-31 09:36:44,447 127.0.0.1 - - [31/May/2025 09:36:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:44,451 127.0.0.1 - - [31/May/2025 09:36:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:44,452 127.0.0.1 - - [31/May/2025 09:36:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-05-31 09:36:44,532 127.0.0.1 - - [31/May/2025 09:36:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-05-31 09:36:44,580 127.0.0.1 - - [31/May/2025 09:36:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -

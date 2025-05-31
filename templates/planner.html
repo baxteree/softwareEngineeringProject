@@ -24,5 +24,12 @@
 
     <button type="submit">Submit</button>
   </form>
+  {% if weeks %}
+  <div class="weeks-list">
+    {% for week in range(weeks | length) %}
+    <h2>{{ weeks[week] }}</h2>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 {% endblock %}
