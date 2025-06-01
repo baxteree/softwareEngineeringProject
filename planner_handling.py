@@ -31,32 +31,29 @@ class Planner:
 
 
 class Task:
-    def __init__(self, title, description, due_date, task_type='general'):
+    def __init__(self, title, description, due_date):
         self.title = title
         self.description = description
         #                          Format correctly
         self.due_date = datetime.strptime(due_date, "%Y-%m-%d")
-        self.task_type = task_type  # 'general', 'week'
-
-    # Classifies the task as either 'general' or 'week'
+        
     def classify_task(self, start_date, num_weeks):
-        end_date = start_date + timedelta(weeks=num_weeks)
-
-        if self.due_date < start_date:
-            return "general"
-        elif self.due_date >= start_date and self.due_date < end_date:
-            return "week"
-        else:
-            return "general"
+        # Find the week number for the task based on its due date
+        for i in range(num_weeks):
+            week_start = start_date + timedelta(weeks=i)
+            week_end = week_start + timedelta(weeks=1)
+            if week_start <= self.due_date < week_end:
+                return i + 1
+        return 'general'
 
     # Creates a task to be handled in the html files
     def create_task(self, start_date, num_weeks):
         title = self.title
         description = self.description
-        due_date = self.due_date.strftime("%Y-%m-%d")
-        task_type = self.classify_task(start_date, num_weeks)
+        due_date = self.due_date.strftime("%d %B %Y")
+        task_week = self.classify_task(start_date, num_weeks)
         # Returns a list of the task's attributes
-        return [title, description, due_date, task_type]
+        return [title, description, due_date, task_week]
 
 
 # Create a test planner
@@ -66,7 +63,7 @@ class Task:
 # print(test.create_weeks())
 
 # Create a test task
-# test2 = Task("Test Task", "This is a test task", "2023-10-29")
+# test2 = Task("Test Task", "This is a test task", "2023-11-11")
 
 # Print a list of attributes of the task
 # print(test2.create_task(test.return_start_date(), test.return_weeks()))

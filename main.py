@@ -9,7 +9,8 @@ from flask_csp.csp import csp_header
 import logging
 
 from planner_handling import Planner, Task
-from data_handing import retrieve_planner_data, insert_planner_data
+from data_handing import insert_planner_data, retrieve_planner_data
+from data_handing import insert_task_data, retrieve_task_data
 
 import userManagement as dbHandler
 
@@ -84,31 +85,69 @@ def planner():
         print(f"Task Due Date: {due_date}")
 
         # Save data to the database
+
+        # Only if the planner form was submitted
+        if start_date is not None and num_weeks is not None:
+            # Use temporary ID 1 for testing purposes TODO (change later)
+            insert_planner_data(1, start_date, num_weeks)
+
+            planner_ = Planner(start_date, num_weeks)
+            weeks = planner_.create_weeks()
+            task_data = retrieve_task_data(1)
+
+            task_list = []
+            for task in task_data:
+                task_ = Task(task[2], task[3], task[4])
+                task_list.append(task_.create_task(planner_.return_start_date(), planner_.return_weeks()))
+            
+            return render_template("/planner.html", weeks=weeks, task_data=task_list)
         
-        # TODO Use temporary ID 1 for testing purposes (change later)
-        insert_planner_data(1, start_date, num_weeks)
+        # Only if the task form was submitted
+        if title is not None and due_date is not None:
+        # Use temporary ID 1 for testing purposes TODO (change later)
+            insert_task_data(1, title, description, due_date)
+        
+            # Retrieve task data from the database
+            # Use temporary ID 1 for testing purposes TODO (change later)
+            task_data = retrieve_task_data(1)
+            planner_data = retrieve_planner_data(1)
+            planner_ = Planner(planner_data[0][1], planner_data[0][2])
+            weeks = planner_.create_weeks()
 
-        # Create a planner with the given start date and number of weeks
-        planner_ = Planner(start_date, num_weeks)
-        weeks = planner_.create_weeks()
+            task_list = []
+            for task in task_data:
+                task_ = Task(task[2], task[3], task[4])
+                task_list.append(task_.create_task(planner_.return_start_date(), planner_.return_weeks()))
 
-        return render_template("/planner.html", weeks=weeks)
+            return render_template("/planner.html", weeks=weeks, task_data=task_list)
 
     if request.method == "GET":
         # Retrieve planner data from the database if it exists
         
-        # TODO Use temporary ID 1 for testing purposes (change later)
-        data = retrieve_planner_data(1)
-        if data is not None:
-            num_weeks = data[0][1]
-            start_date = data[0][2]
+        # Use temporary ID 1 for testing purposes TODO (change later)
+        planner_data = retrieve_planner_data(1)
+        task_data = retrieve_task_data(1)
+
+        # Planner data returned from the database is looks like [(id, num_weeks, start_date)]
+        if planner_data is not None:
+            start_date = planner_data[0][1]
+            num_weeks = planner_data[0][2]
 
             planner_ = Planner(start_date, num_weeks)
             weeks = planner_.create_weeks()
 
-            return render_template("/planner.html", weeks=weeks)
+            # Task data returned from the database is looks like [(task_id, task_planner_id, title, description, due_date)]
+            if task_data is not None:
+                task_list = []
+                for task in task_data:
+                    task_ = Task(task[2], task[3], task[4])
+                    task_list.append(task_.create_task(planner_.return_start_date(), planner_.return_weeks()))
 
-    return render_template("/planner.html", weeks=None)
+                return render_template("/planner.html", weeks=weeks, task_data=task_list)
+            
+            return render_template("/planner.html", weeks=weeks)
+        
+    return render_template("/planner.html", weeks=None, task_data=None)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():

@@ -12,6 +12,9 @@
     <label>Number of Weeks:</label>
     <input type="number" name="num_weeks" min="1" required /><br /><br />
 
+    <button type="submit">Submit</button>
+  </form>
+  <form method="POST">
     <h2>Task Info</h2>
     <label>Title:</label>
     <input type="text" name="title" required /><br /><br />
@@ -20,15 +23,28 @@
     <textarea name="description"></textarea><br /><br />
 
     <label>Due Date:</label>
-    <input type="date" name="due_date" /><br /><br />
+    <input type="date" name="due_date" required /><br /><br />
 
     <button type="submit">Submit</button>
   </form>
-  {% if weeks %}
+  <br /><br />
+  <h2>General tasks</h2>
+  {% for task in task_data %} {% if task[3] == 'general' %}
+  <div class="weeks-list">
+    <h4>{{ task[0] }}</h4>
+    <p>{{ task[1] }}</p>
+    <p>Due: {{ task[2] }}</p>
+  </div>
+  {% endif %} {% endfor %} {% if weeks %}
+  <br /><br />
   <div class="weeks-list">
     {% for week in range(weeks | length) %}
     <h2>{{ weeks[week] }}</h2>
-    {% endfor %}
+    {% for task in task_data %} {% if task[3] == (week+1) %}
+    <h4>{{ task[0] }}</h4>
+    <p>{{ task[1] }}</p>
+    <p>Due: {{ task[2] }}</p>
+    {% endif %} {% endfor %} {% endfor %}
   </div>
   {% endif %}
 </div>
