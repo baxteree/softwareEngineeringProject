@@ -16,7 +16,7 @@ class Planner:
         for i in range(self.num_weeks):
             week_date = start_date + timedelta(weeks=i)
             week_date = week_date.strftime("%d %B %Y")
-            week_dates.append(f"Week {i+1}: {week_date}")
+            week_dates.append(f"{week_date}")
 
         # Returns a list of dates for each week starting from the start_date
         return week_dates

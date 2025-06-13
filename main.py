@@ -136,7 +136,8 @@ def planner():
             planner_ = Planner(start_date, num_weeks)
             weeks = planner_.create_weeks()
 
-            # Task data returned from the database is looks like [(task_id, task_planner_id, title, description, due_date)]
+            # Task data returned from the database looks like 
+            # [(task_id, task_planner_id, title, description, due_date)]
             if task_data is not None:
                 task_list = []
                 for task in task_data:

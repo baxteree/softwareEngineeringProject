@@ -1,0 +1,37 @@
+h3 {
+  padding: 5px;
+}
+.weeks-list {
+  padding: 10px;
+  max-width: 30em;
+}
+.task {
+  width: 400px;
+  border: 2px solid rgb(168, 204, 239);
+  padding: 20px;
+  margin: 20px;
+  max-width: 40em;
+}
+.inline {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+.parent {
+  padding: 1rem;
+}
+.child {
+  width: 400px;
+  border: 1px solid rgb(168, 204, 239);
+  padding: 1rem;
+}
+button {
+  background-color: rgb(168, 204, 239);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}

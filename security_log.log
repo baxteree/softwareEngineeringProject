@@ -2537,3 +2537,597 @@
 2025-06-01 09:15:14,571 127.0.0.1 - - [01/Jun/2025 09:15:14] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
 2025-06-01 09:15:14,631 127.0.0.1 - - [01/Jun/2025 09:15:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
 2025-06-01 09:15:14,680 127.0.0.1 - - [01/Jun/2025 09:15:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-02 02:14:12,627 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.160:5000
+2025-06-02 02:14:12,630 [33mPress CTRL+C to quit[0m
+2025-06-02 02:14:12,631  * Restarting with stat
+2025-06-02 02:14:12,991  * Debugger is active!
+2025-06-02 02:14:13,000  * Debugger PIN: 113-498-309
+2025-06-02 02:14:27,221 127.0.0.1 - - [02/Jun/2025 02:14:27] "GET / HTTP/1.1" 200 -
+2025-06-02 02:14:27,427 127.0.0.1 - - [02/Jun/2025 02:14:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-02 02:14:27,428 127.0.0.1 - - [02/Jun/2025 02:14:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-02 02:14:27,428 127.0.0.1 - - [02/Jun/2025 02:14:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-02 02:14:27,562 127.0.0.1 - - [02/Jun/2025 02:14:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-02 02:14:27,666 127.0.0.1 - - [02/Jun/2025 02:14:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-02 02:14:27,745 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-02 02:14:27,745 127.0.0.1 - - [02/Jun/2025 02:14:27] "POST /csp_report HTTP/1.1" 200 -
+2025-06-02 02:14:31,858 127.0.0.1 - - [02/Jun/2025 02:14:31] "GET /planner.html HTTP/1.1" 200 -
+2025-06-02 02:14:31,968 127.0.0.1 - - [02/Jun/2025 02:14:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-02 02:14:31,981 127.0.0.1 - - [02/Jun/2025 02:14:31] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-02 02:14:31,985 127.0.0.1 - - [02/Jun/2025 02:14:31] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-02 02:14:32,029 127.0.0.1 - - [02/Jun/2025 02:14:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-02 02:14:32,060 127.0.0.1 - - [02/Jun/2025 02:14:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:00,087 127.0.0.1 - - [02/Jun/2025 02:15:00] "POST /planner.html HTTP/1.1" 200 -
+2025-06-02 02:15:00,150 127.0.0.1 - - [02/Jun/2025 02:15:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-02 02:15:00,150 127.0.0.1 - - [02/Jun/2025 02:15:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:00,151 127.0.0.1 - - [02/Jun/2025 02:15:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-02 02:15:00,190 127.0.0.1 - - [02/Jun/2025 02:15:00] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:00,229 127.0.0.1 - - [02/Jun/2025 02:15:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:18,139 127.0.0.1 - - [02/Jun/2025 02:15:18] "POST /planner.html HTTP/1.1" 200 -
+2025-06-02 02:15:18,185 127.0.0.1 - - [02/Jun/2025 02:15:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:18,189 127.0.0.1 - - [02/Jun/2025 02:15:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-02 02:15:18,193 127.0.0.1 - - [02/Jun/2025 02:15:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-02 02:15:18,224 127.0.0.1 - - [02/Jun/2025 02:15:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-02 02:15:18,324 127.0.0.1 - - [02/Jun/2025 02:15:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:44:42,117 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.162:5000
+2025-06-12 22:44:42,118 [33mPress CTRL+C to quit[0m
+2025-06-12 22:44:42,119  * Restarting with stat
+2025-06-12 22:44:42,593  * Debugger is active!
+2025-06-12 22:44:42,602  * Debugger PIN: 963-695-452
+2025-06-12 22:44:51,722 127.0.0.1 - - [12/Jun/2025 22:44:51] "GET / HTTP/1.1" 200 -
+2025-06-12 22:44:52,033 127.0.0.1 - - [12/Jun/2025 22:44:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:44:52,095 127.0.0.1 - - [12/Jun/2025 22:44:52] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-12 22:44:52,097 127.0.0.1 - - [12/Jun/2025 22:44:52] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-12 22:44:52,383 127.0.0.1 - - [12/Jun/2025 22:44:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:44:52,512 127.0.0.1 - - [12/Jun/2025 22:44:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:44:52,555 127.0.0.1 - - [12/Jun/2025 22:44:52] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-12 22:44:52,602 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-12 22:44:52,602 127.0.0.1 - - [12/Jun/2025 22:44:52] "POST /csp_report HTTP/1.1" 200 -
+2025-06-12 22:44:53,807 127.0.0.1 - - [12/Jun/2025 22:44:53] "GET /planner.html HTTP/1.1" 200 -
+2025-06-12 22:44:54,006 127.0.0.1 - - [12/Jun/2025 22:44:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:44:54,011 127.0.0.1 - - [12/Jun/2025 22:44:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:44:54,013 127.0.0.1 - - [12/Jun/2025 22:44:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:44:54,064 127.0.0.1 - - [12/Jun/2025 22:44:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:44:54,095 127.0.0.1 - - [12/Jun/2025 22:44:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:51:33,941 127.0.0.1 - - [12/Jun/2025 22:51:33] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 22:51:34,140 127.0.0.1 - - [12/Jun/2025 22:51:34] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:51:34,159 127.0.0.1 - - [12/Jun/2025 22:51:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:51:34,161 127.0.0.1 - - [12/Jun/2025 22:51:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:51:34,305 127.0.0.1 - - [12/Jun/2025 22:51:34] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:51:34,450 127.0.0.1 - - [12/Jun/2025 22:51:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:52:15,822 127.0.0.1 - - [12/Jun/2025 22:52:15] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 22:52:15,872 127.0.0.1 - - [12/Jun/2025 22:52:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:52:15,877 127.0.0.1 - - [12/Jun/2025 22:52:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:52:15,880 127.0.0.1 - - [12/Jun/2025 22:52:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:52:15,963 127.0.0.1 - - [12/Jun/2025 22:52:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:52:16,001 127.0.0.1 - - [12/Jun/2025 22:52:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:28,049 127.0.0.1 - - [12/Jun/2025 22:54:28] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 22:54:28,252 127.0.0.1 - - [12/Jun/2025 22:54:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:28,259 127.0.0.1 - - [12/Jun/2025 22:54:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:54:28,262 127.0.0.1 - - [12/Jun/2025 22:54:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:54:28,468 127.0.0.1 - - [12/Jun/2025 22:54:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:28,574 127.0.0.1 - - [12/Jun/2025 22:54:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:56,553 127.0.0.1 - - [12/Jun/2025 22:54:56] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 22:54:56,689 127.0.0.1 - - [12/Jun/2025 22:54:56] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:56,694 127.0.0.1 - - [12/Jun/2025 22:54:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:54:56,696 127.0.0.1 - - [12/Jun/2025 22:54:56] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:54:56,743 127.0.0.1 - - [12/Jun/2025 22:54:56] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:54:56,784 127.0.0.1 - - [12/Jun/2025 22:54:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 22:57:40,994 127.0.0.1 - - [12/Jun/2025 22:57:40] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 22:57:41,209 127.0.0.1 - - [12/Jun/2025 22:57:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 22:57:41,215 127.0.0.1 - - [12/Jun/2025 22:57:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 22:57:41,221 127.0.0.1 - - [12/Jun/2025 22:57:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 22:57:41,346 127.0.0.1 - - [12/Jun/2025 22:57:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 22:57:41,481 127.0.0.1 - - [12/Jun/2025 22:57:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:05,629 127.0.0.1 - - [12/Jun/2025 23:00:05] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 23:00:05,798 127.0.0.1 - - [12/Jun/2025 23:00:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 23:00:05,824 127.0.0.1 - - [12/Jun/2025 23:00:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 23:00:05,827 127.0.0.1 - - [12/Jun/2025 23:00:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:05,951 127.0.0.1 - - [12/Jun/2025 23:00:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:06,131 127.0.0.1 - - [12/Jun/2025 23:00:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:50,723 127.0.0.1 - - [12/Jun/2025 23:00:50] "POST /planner.html HTTP/1.1" 200 -
+2025-06-12 23:00:50,769 127.0.0.1 - - [12/Jun/2025 23:00:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-12 23:00:50,775 127.0.0.1 - - [12/Jun/2025 23:00:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-12 23:00:50,778 127.0.0.1 - - [12/Jun/2025 23:00:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:50,815 127.0.0.1 - - [12/Jun/2025 23:00:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-12 23:00:50,848 127.0.0.1 - - [12/Jun/2025 23:00:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:01,370 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.57:5000
+2025-06-13 00:33:01,372 [33mPress CTRL+C to quit[0m
+2025-06-13 00:33:01,373  * Restarting with stat
+2025-06-13 00:33:01,617  * Debugger is active!
+2025-06-13 00:33:01,627  * Debugger PIN: 133-061-487
+2025-06-13 00:33:04,351 127.0.0.1 - - [13/Jun/2025 00:33:04] "GET / HTTP/1.1" 200 -
+2025-06-13 00:33:04,546 127.0.0.1 - - [13/Jun/2025 00:33:04] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:04,546 127.0.0.1 - - [13/Jun/2025 00:33:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 00:33:04,548 127.0.0.1 - - [13/Jun/2025 00:33:04] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 00:33:04,671 127.0.0.1 - - [13/Jun/2025 00:33:04] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:04,780 127.0.0.1 - - [13/Jun/2025 00:33:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:04,861 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-13 00:33:04,862 127.0.0.1 - - [13/Jun/2025 00:33:04] "POST /csp_report HTTP/1.1" 200 -
+2025-06-13 00:33:16,497 127.0.0.1 - - [13/Jun/2025 00:33:16] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 00:33:16,620 127.0.0.1 - - [13/Jun/2025 00:33:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 00:33:16,623 127.0.0.1 - - [13/Jun/2025 00:33:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:16,626 127.0.0.1 - - [13/Jun/2025 00:33:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 00:33:16,671 127.0.0.1 - - [13/Jun/2025 00:33:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 00:33:16,699 127.0.0.1 - - [13/Jun/2025 00:33:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 01:19:04,119 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.27:5000
+2025-06-13 01:19:04,119 [33mPress CTRL+C to quit[0m
+2025-06-13 01:19:04,121  * Restarting with stat
+2025-06-13 01:19:04,434  * Debugger is active!
+2025-06-13 01:19:04,441  * Debugger PIN: 497-473-427
+2025-06-13 01:19:08,939 127.0.0.1 - - [13/Jun/2025 01:19:08] "GET / HTTP/1.1" 200 -
+2025-06-13 01:19:09,347 127.0.0.1 - - [13/Jun/2025 01:19:09] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 01:19:09,349 127.0.0.1 - - [13/Jun/2025 01:19:09] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 01:19:09,350 127.0.0.1 - - [13/Jun/2025 01:19:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 01:19:09,516 127.0.0.1 - - [13/Jun/2025 01:19:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 01:19:09,667 127.0.0.1 - - [13/Jun/2025 01:19:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 01:19:09,749 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-13 01:19:09,750 127.0.0.1 - - [13/Jun/2025 01:19:09] "POST /csp_report HTTP/1.1" 200 -
+2025-06-13 01:28:12,940  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-06-13 01:28:12,975  * Restarting with stat
+2025-06-13 01:28:13,229  * Debugger is active!
+2025-06-13 01:28:13,230  * Debugger PIN: 497-473-427
+2025-06-13 01:28:27,047  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-06-13 01:28:27,080  * Restarting with stat
+2025-06-13 01:28:27,323  * Debugger is active!
+2025-06-13 01:28:27,323  * Debugger PIN: 497-473-427
+2025-06-13 01:29:26,683  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-06-13 01:29:26,718  * Restarting with stat
+2025-06-13 01:29:26,961  * Debugger is active!
+2025-06-13 01:29:26,961  * Debugger PIN: 497-473-427
+2025-06-13 01:29:33,524  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-06-13 01:29:33,559  * Restarting with stat
+2025-06-13 01:29:33,804  * Debugger is active!
+2025-06-13 01:29:33,804  * Debugger PIN: 497-473-427
+2025-06-13 01:44:49,848 127.0.0.1 - - [13/Jun/2025 01:44:49] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 01:44:50,215 127.0.0.1 - - [13/Jun/2025 01:44:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 01:44:50,220 127.0.0.1 - - [13/Jun/2025 01:44:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 01:44:50,229 127.0.0.1 - - [13/Jun/2025 01:44:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 01:44:50,354 127.0.0.1 - - [13/Jun/2025 01:44:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 01:44:50,482 127.0.0.1 - - [13/Jun/2025 01:44:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:17,547 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.238:5000
+2025-06-13 08:14:17,549 [33mPress CTRL+C to quit[0m
+2025-06-13 08:14:17,550  * Restarting with stat
+2025-06-13 08:14:17,790  * Debugger is active!
+2025-06-13 08:14:17,800  * Debugger PIN: 386-114-181
+2025-06-13 08:14:22,489 127.0.0.1 - - [13/Jun/2025 08:14:22] "GET / HTTP/1.1" 200 -
+2025-06-13 08:14:22,739 127.0.0.1 - - [13/Jun/2025 08:14:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:22,740 127.0.0.1 - - [13/Jun/2025 08:14:22] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:22,741 127.0.0.1 - - [13/Jun/2025 08:14:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:22,911 127.0.0.1 - - [13/Jun/2025 08:14:22] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:23,072 127.0.0.1 - - [13/Jun/2025 08:14:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:23,328 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-13 08:14:23,328 127.0.0.1 - - [13/Jun/2025 08:14:23] "POST /csp_report HTTP/1.1" 200 -
+2025-06-13 08:14:23,904 127.0.0.1 - - [13/Jun/2025 08:14:23] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:14:24,088 127.0.0.1 - - [13/Jun/2025 08:14:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:24,091 127.0.0.1 - - [13/Jun/2025 08:14:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:24,094 127.0.0.1 - - [13/Jun/2025 08:14:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:24,168 127.0.0.1 - - [13/Jun/2025 08:14:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:24,216 127.0.0.1 - - [13/Jun/2025 08:14:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:40,744 127.0.0.1 - - [13/Jun/2025 08:14:40] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:14:40,849 127.0.0.1 - - [13/Jun/2025 08:14:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:40,851 127.0.0.1 - - [13/Jun/2025 08:14:40] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:40,854 127.0.0.1 - - [13/Jun/2025 08:14:40] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:40,931 127.0.0.1 - - [13/Jun/2025 08:14:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:40,997 127.0.0.1 - - [13/Jun/2025 08:14:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:41,071 127.0.0.1 - - [13/Jun/2025 08:14:41] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,333 127.0.0.1 - - [13/Jun/2025 08:14:53] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:14:53,429 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,434 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,437 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,508 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,572 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:14:53,637 127.0.0.1 - - [13/Jun/2025 08:14:53] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:15:13,894 127.0.0.1 - - [13/Jun/2025 08:15:13] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:15:14,033 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:15:14,037 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:15:14,040 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:14,106 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:14,178 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:14,279 127.0.0.1 - - [13/Jun/2025 08:15:14] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,616 127.0.0.1 - - [13/Jun/2025 08:15:21] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:15:21,713 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,736 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,741 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,822 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,880 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:15:21,937 127.0.0.1 - - [13/Jun/2025 08:15:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:16:44,702 127.0.0.1 - - [13/Jun/2025 08:16:44] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:16:44,932 127.0.0.1 - - [13/Jun/2025 08:16:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:16:44,934 127.0.0.1 - - [13/Jun/2025 08:16:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:16:44,949 127.0.0.1 - - [13/Jun/2025 08:16:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:16:45,095 127.0.0.1 - - [13/Jun/2025 08:16:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:16:45,239 127.0.0.1 - - [13/Jun/2025 08:16:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:16:45,309 127.0.0.1 - - [13/Jun/2025 08:16:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:20:20,613 127.0.0.1 - - [13/Jun/2025 08:20:20] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:20:20,836 127.0.0.1 - - [13/Jun/2025 08:20:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:20:20,848 127.0.0.1 - - [13/Jun/2025 08:20:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:20,855 127.0.0.1 - - [13/Jun/2025 08:20:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:20:20,931 127.0.0.1 - - [13/Jun/2025 08:20:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:21,082 127.0.0.1 - - [13/Jun/2025 08:20:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:21,230 127.0.0.1 - - [13/Jun/2025 08:20:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:20:33,077 127.0.0.1 - - [13/Jun/2025 08:20:33] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:20:33,166 127.0.0.1 - - [13/Jun/2025 08:20:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:33,169 127.0.0.1 - - [13/Jun/2025 08:20:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:20:33,172 127.0.0.1 - - [13/Jun/2025 08:20:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:20:33,235 127.0.0.1 - - [13/Jun/2025 08:20:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:33,315 127.0.0.1 - - [13/Jun/2025 08:20:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:20:33,385 127.0.0.1 - - [13/Jun/2025 08:20:33] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:23:38,476 127.0.0.1 - - [13/Jun/2025 08:23:38] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:23:38,739 127.0.0.1 - - [13/Jun/2025 08:23:38] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:23:38,741 127.0.0.1 - - [13/Jun/2025 08:23:38] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:23:38,744 127.0.0.1 - - [13/Jun/2025 08:23:38] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:23:38,930 127.0.0.1 - - [13/Jun/2025 08:23:38] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:23:39,080 127.0.0.1 - - [13/Jun/2025 08:23:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:23:39,194 127.0.0.1 - - [13/Jun/2025 08:23:39] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,465 127.0.0.1 - - [13/Jun/2025 08:24:06] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:24:06,578 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,581 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,584 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,652 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,707 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:06,799 127.0.0.1 - - [13/Jun/2025 08:24:06] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,393 127.0.0.1 - - [13/Jun/2025 08:24:21] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:24:21,512 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,517 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,520 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,589 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,646 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:24:21,739 127.0.0.1 - - [13/Jun/2025 08:24:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:25:19,342 127.0.0.1 - - [13/Jun/2025 08:25:19] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:25:19,438 127.0.0.1 - - [13/Jun/2025 08:25:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:25:19,441 127.0.0.1 - - [13/Jun/2025 08:25:19] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:19,443 127.0.0.1 - - [13/Jun/2025 08:25:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:25:19,518 127.0.0.1 - - [13/Jun/2025 08:25:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:19,580 127.0.0.1 - - [13/Jun/2025 08:25:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:19,647 127.0.0.1 - - [13/Jun/2025 08:25:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:25:34,349 127.0.0.1 - - [13/Jun/2025 08:25:34] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:25:34,446 127.0.0.1 - - [13/Jun/2025 08:25:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:25:34,451 127.0.0.1 - - [13/Jun/2025 08:25:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:25:34,454 127.0.0.1 - - [13/Jun/2025 08:25:34] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:34,526 127.0.0.1 - - [13/Jun/2025 08:25:34] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:34,592 127.0.0.1 - - [13/Jun/2025 08:25:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:34,667 127.0.0.1 - - [13/Jun/2025 08:25:34] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:25:36,621 127.0.0.1 - - [13/Jun/2025 08:25:36] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:25:36,760 127.0.0.1 - - [13/Jun/2025 08:25:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:25:36,762 127.0.0.1 - - [13/Jun/2025 08:25:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:36,764 127.0.0.1 - - [13/Jun/2025 08:25:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:25:36,922 127.0.0.1 - - [13/Jun/2025 08:25:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:36,977 127.0.0.1 - - [13/Jun/2025 08:25:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:37,038 127.0.0.1 - - [13/Jun/2025 08:25:37] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:25:46,038 127.0.0.1 - - [13/Jun/2025 08:25:46] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:25:46,121 127.0.0.1 - - [13/Jun/2025 08:25:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:46,124 127.0.0.1 - - [13/Jun/2025 08:25:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:25:46,126 127.0.0.1 - - [13/Jun/2025 08:25:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:25:46,258 127.0.0.1 - - [13/Jun/2025 08:25:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:46,320 127.0.0.1 - - [13/Jun/2025 08:25:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:25:46,389 127.0.0.1 - - [13/Jun/2025 08:25:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:26:16,120 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.238:5000
+2025-06-13 08:26:16,120 [33mPress CTRL+C to quit[0m
+2025-06-13 08:26:16,121  * Restarting with stat
+2025-06-13 08:26:16,360  * Debugger is active!
+2025-06-13 08:26:16,360  * Debugger PIN: 386-114-181
+2025-06-13 08:26:16,819 127.0.0.1 - - [13/Jun/2025 08:26:16] "GET / HTTP/1.1" 200 -
+2025-06-13 08:26:16,908 127.0.0.1 - - [13/Jun/2025 08:26:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:16,909 127.0.0.1 - - [13/Jun/2025 08:26:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:16,910 127.0.0.1 - - [13/Jun/2025 08:26:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:16,986 127.0.0.1 - - [13/Jun/2025 08:26:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:17,058 127.0.0.1 - - [13/Jun/2025 08:26:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:17,191 {"csp-report":{"document-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/","referrer":"https://silver-space-xylophone-wrx6p59v9v6c5g7v.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-space-xylophone-wrx6p59v9v6c5g7v-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-06-13 08:26:17,191 127.0.0.1 - - [13/Jun/2025 08:26:17] "POST /csp_report HTTP/1.1" 200 -
+2025-06-13 08:26:18,884 127.0.0.1 - - [13/Jun/2025 08:26:18] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:26:18,995 127.0.0.1 - - [13/Jun/2025 08:26:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:18,998 127.0.0.1 - - [13/Jun/2025 08:26:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:19,000 127.0.0.1 - - [13/Jun/2025 08:26:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:19,084 127.0.0.1 - - [13/Jun/2025 08:26:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:19,136 127.0.0.1 - - [13/Jun/2025 08:26:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:35,820 127.0.0.1 - - [13/Jun/2025 08:26:35] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:26:35,916 127.0.0.1 - - [13/Jun/2025 08:26:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:26:35,919 127.0.0.1 - - [13/Jun/2025 08:26:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:35,922 127.0.0.1 - - [13/Jun/2025 08:26:35] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:35,997 127.0.0.1 - - [13/Jun/2025 08:26:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:36,060 127.0.0.1 - - [13/Jun/2025 08:26:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:36,126 127.0.0.1 - - [13/Jun/2025 08:26:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:26:43,212 127.0.0.1 - - [13/Jun/2025 08:26:43] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:26:43,325 127.0.0.1 - - [13/Jun/2025 08:26:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:26:43,329 127.0.0.1 - - [13/Jun/2025 08:26:43] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:43,330 127.0.0.1 - - [13/Jun/2025 08:26:43] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:43,407 127.0.0.1 - - [13/Jun/2025 08:26:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:43,468 127.0.0.1 - - [13/Jun/2025 08:26:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:43,537 127.0.0.1 - - [13/Jun/2025 08:26:43] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,400 127.0.0.1 - - [13/Jun/2025 08:26:44] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:26:44,458 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,491 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,494 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,567 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,655 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:44,722 127.0.0.1 - - [13/Jun/2025 08:26:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:26:54,771 127.0.0.1 - - [13/Jun/2025 08:26:54] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:26:54,848 127.0.0.1 - - [13/Jun/2025 08:26:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:26:54,867 127.0.0.1 - - [13/Jun/2025 08:26:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:54,869 127.0.0.1 - - [13/Jun/2025 08:26:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:26:54,936 127.0.0.1 - - [13/Jun/2025 08:26:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:54,997 127.0.0.1 - - [13/Jun/2025 08:26:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:26:55,077 127.0.0.1 - - [13/Jun/2025 08:26:55] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:27:17,119 127.0.0.1 - - [13/Jun/2025 08:27:17] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:27:17,210 127.0.0.1 - - [13/Jun/2025 08:27:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:17,213 127.0.0.1 - - [13/Jun/2025 08:27:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:27:17,216 127.0.0.1 - - [13/Jun/2025 08:27:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:27:17,288 127.0.0.1 - - [13/Jun/2025 08:27:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:17,347 127.0.0.1 - - [13/Jun/2025 08:27:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:17,418 127.0.0.1 - - [13/Jun/2025 08:27:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:27:29,395 127.0.0.1 - - [13/Jun/2025 08:27:29] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:27:29,483 127.0.0.1 - - [13/Jun/2025 08:27:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:27:29,485 127.0.0.1 - - [13/Jun/2025 08:27:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:27:29,487 127.0.0.1 - - [13/Jun/2025 08:27:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:29,566 127.0.0.1 - - [13/Jun/2025 08:27:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:29,624 127.0.0.1 - - [13/Jun/2025 08:27:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:29,685 127.0.0.1 - - [13/Jun/2025 08:27:29] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,237 127.0.0.1 - - [13/Jun/2025 08:27:34] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:27:34,333 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,338 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,342 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,418 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,489 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:27:34,559 127.0.0.1 - - [13/Jun/2025 08:27:34] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:28:39,166 127.0.0.1 - - [13/Jun/2025 08:28:39] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:28:39,246 127.0.0.1 - - [13/Jun/2025 08:28:39] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:28:39,264 127.0.0.1 - - [13/Jun/2025 08:28:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:28:39,275 127.0.0.1 - - [13/Jun/2025 08:28:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:39,347 127.0.0.1 - - [13/Jun/2025 08:28:39] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:39,405 127.0.0.1 - - [13/Jun/2025 08:28:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:39,495 127.0.0.1 - - [13/Jun/2025 08:28:39] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:28:49,267 127.0.0.1 - - [13/Jun/2025 08:28:49] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:28:49,390 127.0.0.1 - - [13/Jun/2025 08:28:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:28:49,394 127.0.0.1 - - [13/Jun/2025 08:28:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:49,396 127.0.0.1 - - [13/Jun/2025 08:28:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:28:49,500 127.0.0.1 - - [13/Jun/2025 08:28:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:49,570 127.0.0.1 - - [13/Jun/2025 08:28:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:49,628 127.0.0.1 - - [13/Jun/2025 08:28:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:28:59,078 127.0.0.1 - - [13/Jun/2025 08:28:59] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:28:59,160 127.0.0.1 - - [13/Jun/2025 08:28:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:28:59,166 127.0.0.1 - - [13/Jun/2025 08:28:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:28:59,179 127.0.0.1 - - [13/Jun/2025 08:28:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:59,234 127.0.0.1 - - [13/Jun/2025 08:28:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:59,295 127.0.0.1 - - [13/Jun/2025 08:28:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:28:59,367 127.0.0.1 - - [13/Jun/2025 08:28:59] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:30:18,400 127.0.0.1 - - [13/Jun/2025 08:30:18] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:30:18,501 127.0.0.1 - - [13/Jun/2025 08:30:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:30:18,505 127.0.0.1 - - [13/Jun/2025 08:30:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:30:18,509 127.0.0.1 - - [13/Jun/2025 08:30:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:30:18,660 127.0.0.1 - - [13/Jun/2025 08:30:18] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:30:18,733 127.0.0.1 - - [13/Jun/2025 08:30:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:30:18,801 127.0.0.1 - - [13/Jun/2025 08:30:18] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:35:20,509 127.0.0.1 - - [13/Jun/2025 08:35:20] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:35:20,751 127.0.0.1 - - [13/Jun/2025 08:35:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:35:20,753 127.0.0.1 - - [13/Jun/2025 08:35:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:35:20,755 127.0.0.1 - - [13/Jun/2025 08:35:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:20,928 127.0.0.1 - - [13/Jun/2025 08:35:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:21,048 127.0.0.1 - - [13/Jun/2025 08:35:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:21,119 127.0.0.1 - - [13/Jun/2025 08:35:21] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,523 127.0.0.1 - - [13/Jun/2025 08:35:52] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:35:52,610 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,614 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,616 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,690 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,838 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:35:52,909 127.0.0.1 - - [13/Jun/2025 08:35:52] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:36:52,849 127.0.0.1 - - [13/Jun/2025 08:36:52] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:36:52,938 127.0.0.1 - - [13/Jun/2025 08:36:52] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:36:52,941 127.0.0.1 - - [13/Jun/2025 08:36:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:36:52,943 127.0.0.1 - - [13/Jun/2025 08:36:52] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:53,039 127.0.0.1 - - [13/Jun/2025 08:36:53] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:53,100 127.0.0.1 - - [13/Jun/2025 08:36:53] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:53,173 127.0.0.1 - - [13/Jun/2025 08:36:53] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,338 127.0.0.1 - - [13/Jun/2025 08:36:54] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:36:54,443 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,447 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,450 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,540 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,602 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:36:54,680 127.0.0.1 - - [13/Jun/2025 08:36:54] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,053 127.0.0.1 - - [13/Jun/2025 08:37:33] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:37:33,147 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,150 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,152 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,231 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,290 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:37:33,382 127.0.0.1 - - [13/Jun/2025 08:37:33] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:39:49,096 127.0.0.1 - - [13/Jun/2025 08:39:49] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:39:49,336 127.0.0.1 - - [13/Jun/2025 08:39:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:39:49,342 127.0.0.1 - - [13/Jun/2025 08:39:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:39:49,350 127.0.0.1 - - [13/Jun/2025 08:39:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:39:49,513 127.0.0.1 - - [13/Jun/2025 08:39:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:39:49,660 127.0.0.1 - - [13/Jun/2025 08:39:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:39:49,736 127.0.0.1 - - [13/Jun/2025 08:39:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,178 127.0.0.1 - - [13/Jun/2025 08:40:05] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:40:05,274 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,276 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,279 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,358 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,416 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:05,486 127.0.0.1 - - [13/Jun/2025 08:40:05] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:40:06,836 127.0.0.1 - - [13/Jun/2025 08:40:06] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:40:06,935 127.0.0.1 - - [13/Jun/2025 08:40:06] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:06,941 127.0.0.1 - - [13/Jun/2025 08:40:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:40:06,942 127.0.0.1 - - [13/Jun/2025 08:40:06] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:40:07,016 127.0.0.1 - - [13/Jun/2025 08:40:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:07,086 127.0.0.1 - - [13/Jun/2025 08:40:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:40:07,170 127.0.0.1 - - [13/Jun/2025 08:40:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:42:00,619 127.0.0.1 - - [13/Jun/2025 08:42:00] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:42:00,884 127.0.0.1 - - [13/Jun/2025 08:42:00] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:42:00,887 127.0.0.1 - - [13/Jun/2025 08:42:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:42:00,889 127.0.0.1 - - [13/Jun/2025 08:42:00] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:01,034 127.0.0.1 - - [13/Jun/2025 08:42:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:01,169 127.0.0.1 - - [13/Jun/2025 08:42:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:01,242 127.0.0.1 - - [13/Jun/2025 08:42:01] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,195 127.0.0.1 - - [13/Jun/2025 08:42:03] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:42:03,306 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,312 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,313 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,392 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,454 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:42:03,522 127.0.0.1 - - [13/Jun/2025 08:42:03] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:43:34,908 127.0.0.1 - - [13/Jun/2025 08:43:34] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:43:35,002 127.0.0.1 - - [13/Jun/2025 08:43:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:43:35,005 127.0.0.1 - - [13/Jun/2025 08:43:35] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:43:35,008 127.0.0.1 - - [13/Jun/2025 08:43:35] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:43:35,095 127.0.0.1 - - [13/Jun/2025 08:43:35] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:43:35,230 127.0.0.1 - - [13/Jun/2025 08:43:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:43:35,291 127.0.0.1 - - [13/Jun/2025 08:43:35] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:44:16,793 127.0.0.1 - - [13/Jun/2025 08:44:16] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:44:16,884 127.0.0.1 - - [13/Jun/2025 08:44:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:44:16,886 127.0.0.1 - - [13/Jun/2025 08:44:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:44:16,888 127.0.0.1 - - [13/Jun/2025 08:44:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:44:16,972 127.0.0.1 - - [13/Jun/2025 08:44:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:44:17,035 127.0.0.1 - - [13/Jun/2025 08:44:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:44:17,090 127.0.0.1 - - [13/Jun/2025 08:44:17] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:45:26,915 127.0.0.1 - - [13/Jun/2025 08:45:26] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:45:27,021 127.0.0.1 - - [13/Jun/2025 08:45:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:27,024 127.0.0.1 - - [13/Jun/2025 08:45:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:45:27,094 127.0.0.1 - - [13/Jun/2025 08:45:27] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:45:27,191 127.0.0.1 - - [13/Jun/2025 08:45:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:27,254 127.0.0.1 - - [13/Jun/2025 08:45:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:27,328 127.0.0.1 - - [13/Jun/2025 08:45:27] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:45:46,006 127.0.0.1 - - [13/Jun/2025 08:45:46] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:45:46,110 127.0.0.1 - - [13/Jun/2025 08:45:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:45:46,113 127.0.0.1 - - [13/Jun/2025 08:45:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:46,116 127.0.0.1 - - [13/Jun/2025 08:45:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:45:46,189 127.0.0.1 - - [13/Jun/2025 08:45:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:46,251 127.0.0.1 - - [13/Jun/2025 08:45:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:46,320 127.0.0.1 - - [13/Jun/2025 08:45:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:45:59,727 127.0.0.1 - - [13/Jun/2025 08:45:59] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:45:59,828 127.0.0.1 - - [13/Jun/2025 08:45:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:59,831 127.0.0.1 - - [13/Jun/2025 08:45:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:45:59,833 127.0.0.1 - - [13/Jun/2025 08:45:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:45:59,898 127.0.0.1 - - [13/Jun/2025 08:45:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:45:59,951 127.0.0.1 - - [13/Jun/2025 08:45:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:46:00,020 127.0.0.1 - - [13/Jun/2025 08:46:00] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:52:11,887 127.0.0.1 - - [13/Jun/2025 08:52:11] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:52:12,159 127.0.0.1 - - [13/Jun/2025 08:52:12] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:52:12,164 127.0.0.1 - - [13/Jun/2025 08:52:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:52:12,174 127.0.0.1 - - [13/Jun/2025 08:52:12] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:52:12,340 127.0.0.1 - - [13/Jun/2025 08:52:12] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:52:12,482 127.0.0.1 - - [13/Jun/2025 08:52:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:52:12,546 127.0.0.1 - - [13/Jun/2025 08:52:12] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:54:23,909 127.0.0.1 - - [13/Jun/2025 08:54:23] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:54:24,199 127.0.0.1 - - [13/Jun/2025 08:54:24] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:24,203 127.0.0.1 - - [13/Jun/2025 08:54:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:54:24,206 127.0.0.1 - - [13/Jun/2025 08:54:24] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:54:24,376 127.0.0.1 - - [13/Jun/2025 08:54:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:24,511 127.0.0.1 - - [13/Jun/2025 08:54:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:24,580 127.0.0.1 - - [13/Jun/2025 08:54:24] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:54:26,772 127.0.0.1 - - [13/Jun/2025 08:54:26] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:54:26,905 127.0.0.1 - - [13/Jun/2025 08:54:26] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:54:26,908 127.0.0.1 - - [13/Jun/2025 08:54:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:54:26,911 127.0.0.1 - - [13/Jun/2025 08:54:26] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:26,985 127.0.0.1 - - [13/Jun/2025 08:54:26] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:27,056 127.0.0.1 - - [13/Jun/2025 08:54:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:27,132 127.0.0.1 - - [13/Jun/2025 08:54:27] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:54:37,176 127.0.0.1 - - [13/Jun/2025 08:54:37] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:54:37,272 127.0.0.1 - - [13/Jun/2025 08:54:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:54:37,276 127.0.0.1 - - [13/Jun/2025 08:54:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:37,277 127.0.0.1 - - [13/Jun/2025 08:54:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:54:37,360 127.0.0.1 - - [13/Jun/2025 08:54:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:37,428 127.0.0.1 - - [13/Jun/2025 08:54:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:37,494 127.0.0.1 - - [13/Jun/2025 08:54:37] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:54:47,623 127.0.0.1 - - [13/Jun/2025 08:54:47] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:54:47,710 127.0.0.1 - - [13/Jun/2025 08:54:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:54:47,714 127.0.0.1 - - [13/Jun/2025 08:54:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:54:47,716 127.0.0.1 - - [13/Jun/2025 08:54:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:47,781 127.0.0.1 - - [13/Jun/2025 08:54:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:47,841 127.0.0.1 - - [13/Jun/2025 08:54:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:54:47,912 127.0.0.1 - - [13/Jun/2025 08:54:47] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:55:23,848 127.0.0.1 - - [13/Jun/2025 08:55:23] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:55:23,952 127.0.0.1 - - [13/Jun/2025 08:55:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:55:23,956 127.0.0.1 - - [13/Jun/2025 08:55:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:55:23,959 127.0.0.1 - - [13/Jun/2025 08:55:23] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:24,031 127.0.0.1 - - [13/Jun/2025 08:55:24] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:24,095 127.0.0.1 - - [13/Jun/2025 08:55:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:24,160 127.0.0.1 - - [13/Jun/2025 08:55:24] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:55:34,003 127.0.0.1 - - [13/Jun/2025 08:55:34] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:55:34,092 127.0.0.1 - - [13/Jun/2025 08:55:34] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:34,094 127.0.0.1 - - [13/Jun/2025 08:55:34] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:55:34,096 127.0.0.1 - - [13/Jun/2025 08:55:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:55:34,169 127.0.0.1 - - [13/Jun/2025 08:55:34] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:34,231 127.0.0.1 - - [13/Jun/2025 08:55:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:55:34,301 127.0.0.1 - - [13/Jun/2025 08:55:34] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:56:05,369 127.0.0.1 - - [13/Jun/2025 08:56:05] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:56:05,472 127.0.0.1 - - [13/Jun/2025 08:56:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:56:05,475 127.0.0.1 - - [13/Jun/2025 08:56:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:05,477 127.0.0.1 - - [13/Jun/2025 08:56:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:56:05,553 127.0.0.1 - - [13/Jun/2025 08:56:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:05,612 127.0.0.1 - - [13/Jun/2025 08:56:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:05,680 127.0.0.1 - - [13/Jun/2025 08:56:05] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:56:10,864 127.0.0.1 - - [13/Jun/2025 08:56:10] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:56:10,953 127.0.0.1 - - [13/Jun/2025 08:56:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:56:10,956 127.0.0.1 - - [13/Jun/2025 08:56:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:56:10,958 127.0.0.1 - - [13/Jun/2025 08:56:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:11,035 127.0.0.1 - - [13/Jun/2025 08:56:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:11,091 127.0.0.1 - - [13/Jun/2025 08:56:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:56:11,166 127.0.0.1 - - [13/Jun/2025 08:56:11] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:57:18,867 127.0.0.1 - - [13/Jun/2025 08:57:18] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:57:18,969 127.0.0.1 - - [13/Jun/2025 08:57:18] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 08:57:18,972 127.0.0.1 - - [13/Jun/2025 08:57:18] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:57:18,974 127.0.0.1 - - [13/Jun/2025 08:57:18] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:57:19,167 127.0.0.1 - - [13/Jun/2025 08:57:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:57:19,315 127.0.0.1 - - [13/Jun/2025 08:57:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:57:19,381 127.0.0.1 - - [13/Jun/2025 08:57:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 08:58:32,804 127.0.0.1 - - [13/Jun/2025 08:58:32] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 08:58:32,908 127.0.0.1 - - [13/Jun/2025 08:58:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 08:58:32,911 127.0.0.1 - - [13/Jun/2025 08:58:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 08:58:32,913 127.0.0.1 - - [13/Jun/2025 08:58:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 08:58:32,988 127.0.0.1 - - [13/Jun/2025 08:58:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 08:58:33,048 127.0.0.1 - - [13/Jun/2025 08:58:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 08:58:33,119 127.0.0.1 - - [13/Jun/2025 08:58:33] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 09:03:56,109 127.0.0.1 - - [13/Jun/2025 09:03:56] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 09:04:47,426 127.0.0.1 - - [13/Jun/2025 09:04:47] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 09:04:47,865 127.0.0.1 - - [13/Jun/2025 09:04:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-06-13 09:04:48,168 127.0.0.1 - - [13/Jun/2025 09:04:48] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-06-13 09:04:48,223 127.0.0.1 - - [13/Jun/2025 09:04:48] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-06-13 09:04:49,567 127.0.0.1 - - [13/Jun/2025 09:04:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 09:04:50,332 127.0.0.1 - - [13/Jun/2025 09:04:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 09:04:50,697 127.0.0.1 - - [13/Jun/2025 09:04:50] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 09:05:42,072 127.0.0.1 - - [13/Jun/2025 09:05:42] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 09:05:42,434 127.0.0.1 - - [13/Jun/2025 09:05:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 09:05:42,827 127.0.0.1 - - [13/Jun/2025 09:05:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 09:05:42,830 127.0.0.1 - - [13/Jun/2025 09:05:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 09:05:43,186 127.0.0.1 - - [13/Jun/2025 09:05:43] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 09:05:43,913 127.0.0.1 - - [13/Jun/2025 09:05:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 09:05:44,258 127.0.0.1 - - [13/Jun/2025 09:05:44] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 09:06:08,287 127.0.0.1 - - [13/Jun/2025 09:06:08] "GET /planner.html HTTP/1.1" 200 -
+2025-06-13 09:06:08,646 127.0.0.1 - - [13/Jun/2025 09:06:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 09:06:08,649 127.0.0.1 - - [13/Jun/2025 09:06:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 09:06:08,993 127.0.0.1 - - [13/Jun/2025 09:06:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 09:06:09,695 127.0.0.1 - - [13/Jun/2025 09:06:09] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 09:06:10,041 127.0.0.1 - - [13/Jun/2025 09:06:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 09:06:10,388 127.0.0.1 - - [13/Jun/2025 09:06:10] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-06-13 09:07:01,607 127.0.0.1 - - [13/Jun/2025 09:07:01] "POST /planner.html HTTP/1.1" 200 -
+2025-06-13 09:07:02,331 127.0.0.1 - - [13/Jun/2025 09:07:02] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 09:07:02,333 127.0.0.1 - - [13/Jun/2025 09:07:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 09:07:02,371 127.0.0.1 - - [13/Jun/2025 09:07:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 09:07:03,160 127.0.0.1 - - [13/Jun/2025 09:07:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 09:07:03,501 127.0.0.1 - - [13/Jun/2025 09:07:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-06-13 09:07:18,351 127.0.0.1 - - [13/Jun/2025 09:07:18] "POST /planner.html HTTP/1.1" 200 -
+2025-06-13 09:07:19,064 127.0.0.1 - - [13/Jun/2025 09:07:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-06-13 09:07:19,139 127.0.0.1 - - [13/Jun/2025 09:07:19] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-06-13 09:07:19,183 127.0.0.1 - - [13/Jun/2025 09:07:19] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-06-13 09:07:19,522 127.0.0.1 - - [13/Jun/2025 09:07:19] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-06-13 09:07:19,866 127.0.0.1 - - [13/Jun/2025 09:07:19] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
