@@ -55,6 +55,13 @@ class Task:
         # Returns a list of the task's attributes
         return [title, description, due_date, task_week]
 
+# Makes a list of tasks to be returned to the html file
+def make_task_list(task_data, start_date, num_weeks):
+    task_list = []
+    for task in task_data:
+        task_ = Task(task[2], task[3], task[4])
+        task_list.append(task_.create_task(start_date, num_weeks))
+    return task_list
 
 # Create a test planner
 # test = Planner("2023-10-01", 4)
