@@ -3394,3 +3394,155 @@
 2025-06-14 02:53:13,181 127.0.0.1 - - [14/Jun/2025 02:53:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
 2025-06-14 02:53:13,236 127.0.0.1 - - [14/Jun/2025 02:53:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
 2025-06-14 02:53:13,288 127.0.0.1 - - [14/Jun/2025 02:53:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 02:34:28,123 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.3.157:5000
+2025-08-25 02:34:28,123 [33mPress CTRL+C to quit[0m
+2025-08-25 02:34:28,124  * Restarting with stat
+2025-08-25 02:34:28,387  * Debugger is active!
+2025-08-25 02:34:28,388  * Debugger PIN: 265-846-513
+2025-08-25 02:34:32,365 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET / HTTP/1.1" 200 -
+2025-08-25 02:34:32,568 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2025-08-25 02:34:32,570 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2025-08-25 02:34:32,584 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-08-25 02:34:32,736 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2025-08-25 02:34:32,839 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-08-25 02:34:32,875 127.0.0.1 - - [25/Aug/2025 02:34:32] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2025-08-25 02:34:32,894 127.0.0.1 - - [25/Aug/2025 02:34:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 02:34:32,950 {"csp-report":{"document-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/","referrer":"https://silver-tribble-5gvxgqqr7pxv3v99j.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-25 02:34:32,950 127.0.0.1 - - [25/Aug/2025 02:34:32] "POST /csp_report HTTP/1.1" 200 -
+2025-08-25 02:34:32,990 127.0.0.1 - - [25/Aug/2025 02:34:32] "[33mGET /static/js/static/css/style.css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2025-08-25 02:34:32,999 127.0.0.1 - - [25/Aug/2025 02:34:32] "[33mGET /static/js/static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,002 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/js/app.js HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,006 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/css/style.css HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,011 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/icon-192x192.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,014 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/icon-384x384.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,017 127.0.0.1 - - [25/Aug/2025 02:34:33] "GET / HTTP/1.1" 200 -
+2025-08-25 02:34:33,018 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/images/favicon.jpg HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,019 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/icon-512x512.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,020 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/icon-128x128.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,025 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/images/logo.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,050 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/mobile_screenshot.png HTTP/1.1[0m" 404 -
+2025-08-25 02:34:33,051 127.0.0.1 - - [25/Aug/2025 02:34:33] "[33mGET /static/js/static/icons/desktop_screenshot.png HTTP/1.1[0m" 404 -
+2025-08-25 02:35:21,190 127.0.0.1 - - [25/Aug/2025 02:35:21] "GET /planner.html HTTP/1.1" 200 -
+2025-08-25 02:35:21,396 127.0.0.1 - - [25/Aug/2025 02:35:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 02:35:21,402 127.0.0.1 - - [25/Aug/2025 02:35:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 02:35:21,414 127.0.0.1 - - [25/Aug/2025 02:35:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 02:35:21,530 127.0.0.1 - - [25/Aug/2025 02:35:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 02:35:21,647 127.0.0.1 - - [25/Aug/2025 02:35:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:41,333 127.0.0.1 - - [25/Aug/2025 02:40:41] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-08-25 02:40:41,514 127.0.0.1 - - [25/Aug/2025 02:40:41] "GET / HTTP/1.1" 200 -
+2025-08-25 02:40:41,776 127.0.0.1 - - [25/Aug/2025 02:40:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 02:40:41,778 127.0.0.1 - - [25/Aug/2025 02:40:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 02:40:41,781 127.0.0.1 - - [25/Aug/2025 02:40:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:41,906 127.0.0.1 - - [25/Aug/2025 02:40:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:41,938 127.0.0.1 - - [25/Aug/2025 02:40:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:42,034 {"csp-report":{"document-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/","referrer":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/planner.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-25 02:40:42,034 127.0.0.1 - - [25/Aug/2025 02:40:42] "POST /csp_report HTTP/1.1" 200 -
+2025-08-25 02:40:47,830 127.0.0.1 - - [25/Aug/2025 02:40:47] "GET /planner.html HTTP/1.1" 200 -
+2025-08-25 02:40:47,885 127.0.0.1 - - [25/Aug/2025 02:40:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 02:40:47,888 127.0.0.1 - - [25/Aug/2025 02:40:47] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 02:40:47,891 127.0.0.1 - - [25/Aug/2025 02:40:47] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:47,921 127.0.0.1 - - [25/Aug/2025 02:40:47] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 02:40:47,944 127.0.0.1 - - [25/Aug/2025 02:40:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:36,534 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.160:5000
+2025-08-25 23:38:36,560 [33mPress CTRL+C to quit[0m
+2025-08-25 23:38:36,561  * Restarting with stat
+2025-08-25 23:38:36,809  * Debugger is active!
+2025-08-25 23:38:36,810  * Debugger PIN: 813-818-282
+2025-08-25 23:38:39,748 127.0.0.1 - - [25/Aug/2025 23:38:39] "GET / HTTP/1.1" 200 -
+2025-08-25 23:38:39,985 127.0.0.1 - - [25/Aug/2025 23:38:39] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:38:39,985 127.0.0.1 - - [25/Aug/2025 23:38:39] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:39,987 127.0.0.1 - - [25/Aug/2025 23:38:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:38:40,108 127.0.0.1 - - [25/Aug/2025 23:38:40] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:40,236 127.0.0.1 - - [25/Aug/2025 23:38:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:40,335 {"csp-report":{"document-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/","referrer":"https://silver-tribble-5gvxgqqr7pxv3v99j.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-25 23:38:40,336 127.0.0.1 - - [25/Aug/2025 23:38:40] "POST /csp_report HTTP/1.1" 200 -
+2025-08-25 23:38:41,065 127.0.0.1 - - [25/Aug/2025 23:38:41] "GET /planner.html HTTP/1.1" 200 -
+2025-08-25 23:38:41,189 127.0.0.1 - - [25/Aug/2025 23:38:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:38:41,195 127.0.0.1 - - [25/Aug/2025 23:38:41] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:38:41,198 127.0.0.1 - - [25/Aug/2025 23:38:41] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:41,240 127.0.0.1 - - [25/Aug/2025 23:38:41] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:38:41,267 127.0.0.1 - - [25/Aug/2025 23:38:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:44:04,203 127.0.0.1 - - [25/Aug/2025 23:44:04] "POST /planner.html HTTP/1.1" 200 -
+2025-08-25 23:44:05,165 127.0.0.1 - - [25/Aug/2025 23:44:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:44:05,339 127.0.0.1 - - [25/Aug/2025 23:44:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:44:05,341 127.0.0.1 - - [25/Aug/2025 23:44:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:44:06,475 127.0.0.1 - - [25/Aug/2025 23:44:06] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:44:07,364 127.0.0.1 - - [25/Aug/2025 23:44:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:51:55,882  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-08-25 23:51:55,917  * Restarting with stat
+2025-08-25 23:51:56,170  * Debugger is active!
+2025-08-25 23:51:56,171  * Debugger PIN: 813-818-282
+2025-08-25 23:52:12,759 127.0.0.1 - - [25/Aug/2025 23:52:12] "POST /planner.html HTTP/1.1" 200 -
+2025-08-25 23:52:13,004 127.0.0.1 - - [25/Aug/2025 23:52:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:52:13,024 127.0.0.1 - - [25/Aug/2025 23:52:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:52:13,030 127.0.0.1 - - [25/Aug/2025 23:52:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:52:13,168 127.0.0.1 - - [25/Aug/2025 23:52:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:52:13,283 127.0.0.1 - - [25/Aug/2025 23:52:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:10,272  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-08-25 23:54:10,312  * Restarting with stat
+2025-08-25 23:54:10,565  * Debugger is active!
+2025-08-25 23:54:10,565  * Debugger PIN: 813-818-282
+2025-08-25 23:54:14,983 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.160:5000
+2025-08-25 23:54:14,984 [33mPress CTRL+C to quit[0m
+2025-08-25 23:54:14,984  * Restarting with stat
+2025-08-25 23:54:15,226  * Debugger is active!
+2025-08-25 23:54:15,226  * Debugger PIN: 813-818-282
+2025-08-25 23:54:15,717 127.0.0.1 - - [25/Aug/2025 23:54:15] "GET / HTTP/1.1" 200 -
+2025-08-25 23:54:15,960 127.0.0.1 - - [25/Aug/2025 23:54:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:15,965 127.0.0.1 - - [25/Aug/2025 23:54:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:15,973 127.0.0.1 - - [25/Aug/2025 23:54:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:16,110 127.0.0.1 - - [25/Aug/2025 23:54:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:16,238 127.0.0.1 - - [25/Aug/2025 23:54:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:16,325 {"csp-report":{"document-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/","referrer":"https://silver-tribble-5gvxgqqr7pxv3v99j.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://silver-tribble-5gvxgqqr7pxv3v99j-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-08-25 23:54:16,325 127.0.0.1 - - [25/Aug/2025 23:54:16] "POST /csp_report HTTP/1.1" 200 -
+2025-08-25 23:54:17,343 127.0.0.1 - - [25/Aug/2025 23:54:17] "GET /planner.html HTTP/1.1" 200 -
+2025-08-25 23:54:17,395 127.0.0.1 - - [25/Aug/2025 23:54:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:17,399 127.0.0.1 - - [25/Aug/2025 23:54:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:17,401 127.0.0.1 - - [25/Aug/2025 23:54:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:17,455 127.0.0.1 - - [25/Aug/2025 23:54:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:17,482 127.0.0.1 - - [25/Aug/2025 23:54:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:27,276 127.0.0.1 - - [25/Aug/2025 23:54:27] "POST /planner.html HTTP/1.1" 200 -
+2025-08-25 23:54:27,323 127.0.0.1 - - [25/Aug/2025 23:54:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:27,327 127.0.0.1 - - [25/Aug/2025 23:54:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:54:27,329 127.0.0.1 - - [25/Aug/2025 23:54:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:27,362 127.0.0.1 - - [25/Aug/2025 23:54:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:54:27,403 127.0.0.1 - - [25/Aug/2025 23:54:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:56:02,419  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-08-25 23:56:02,463  * Restarting with stat
+2025-08-25 23:56:02,757  * Debugger is active!
+2025-08-25 23:56:02,758  * Debugger PIN: 813-818-282
+2025-08-25 23:57:58,126  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-08-25 23:57:58,161  * Restarting with stat
+2025-08-25 23:57:58,450  * Debugger is active!
+2025-08-25 23:57:58,450  * Debugger PIN: 813-818-282
+2025-08-25 23:58:02,274 127.0.0.1 - - [25/Aug/2025 23:58:02] "GET /planner.html HTTP/1.1" 200 -
+2025-08-25 23:58:02,493 127.0.0.1 - - [25/Aug/2025 23:58:02] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:02,494 127.0.0.1 - - [25/Aug/2025 23:58:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:02,494 127.0.0.1 - - [25/Aug/2025 23:58:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:02,618 127.0.0.1 - - [25/Aug/2025 23:58:02] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:02,748 127.0.0.1 - - [25/Aug/2025 23:58:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:11,734 127.0.0.1 - - [25/Aug/2025 23:58:11] "POST /planner.html HTTP/1.1" 200 -
+2025-08-25 23:58:11,780 127.0.0.1 - - [25/Aug/2025 23:58:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:11,783 127.0.0.1 - - [25/Aug/2025 23:58:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:11,785 127.0.0.1 - - [25/Aug/2025 23:58:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:11,817 127.0.0.1 - - [25/Aug/2025 23:58:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:11,852 127.0.0.1 - - [25/Aug/2025 23:58:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:27,086 127.0.0.1 - - [25/Aug/2025 23:58:27] "POST /planner.html HTTP/1.1" 200 -
+2025-08-25 23:58:27,133 127.0.0.1 - - [25/Aug/2025 23:58:27] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:27,136 127.0.0.1 - - [25/Aug/2025 23:58:27] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:27,138 127.0.0.1 - - [25/Aug/2025 23:58:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-08-25 23:58:27,175 127.0.0.1 - - [25/Aug/2025 23:58:27] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-08-25 23:58:27,199 127.0.0.1 - - [25/Aug/2025 23:58:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-08-26 00:00:43,222  * Detected change in '/workspaces/softwareEngineeringProject/main.py', reloading
+2025-08-26 00:00:43,261  * Restarting with stat
+2025-08-26 00:00:43,510  * Debugger is active!
+2025-08-26 00:00:43,510  * Debugger PIN: 813-818-282

@@ -6,6 +6,7 @@
   <div class="parent">
     <div class="child inline">
       <form method="POST">
+        <input type="hidden" name="form_type" value="planner_form" />
         <h2>Planner Info</h2>
         <label>Template type:</label>
         <select name="template_type" required>
@@ -24,6 +25,7 @@
     </div>
     <div class="child inline">
       <form method="POST">
+        <input type="hidden" name="form_type" value="task_form" />
         <h2>Task Info</h2>
         <label>Title:</label>
         <input type="text" name="title" required /><br /><br />

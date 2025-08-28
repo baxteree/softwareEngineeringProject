@@ -68,51 +68,39 @@ def index():
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
     if request.method == "POST":
-        # Get planner details
-        start_date = request.form.get("start_date")
-        num_weeks = request.form.get("num_weeks")
+        form_type = request.form.get("form_type")
+        
+        # Use temporary ID 1 (TODO: change when user accounts are added)
+        if form_type == "planner_form":
+            start_date = request.form.get("start_date")
+            num_weeks = request.form.get("num_weeks")
 
-        # Get task details
-        title = request.form.get("title")
-        description = request.form.get("description")
-        due_date = request.form.get("due_date")
-
-        # Print to console to check if it worked
-        print(f"Planner Start Date: {start_date}")
-        print(f"Planner Weeks: {num_weeks}")
-        print(f"Task Title: {title}")
-        print(f"Task Description: {description}")
-        print(f"Task Due Date: {due_date}")
-
-        # Save data to the database
-
-        # Only if the planner form was submitted
-        if start_date is not None and num_weeks is not None:
-            # Use temporary ID 1 (TODO: change when user accounts are added)
+            # Insert the new planner into the database
             insert_planner_data(1, start_date, num_weeks)
-
+            
+            # Retrieve the planner and task data to update the page
             planner_ = Planner(start_date, num_weeks)
             weeks = planner_.create_weeks()
             task_data = retrieve_task_data(1)
-
-            # Create a list of tasks to be returned to the html file
             task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
             
             return render_template("/planner.html", weeks=weeks, task_data=task_list)
         
-        # Only if the task form was submitted
-        if title is not None and due_date is not None:
-        # Use temporary ID 1 (TODO: change when user accounts are added)
+        elif form_type == "task_form":
+            title = request.form.get("title")
+            description = request.form.get("description")
+            due_date = request.form.get("due_date")
+
+            # Insert the new task into the database
             insert_task_data(1, title, description, due_date)
-        
-            # Retrieve task data from the database
+            
+            # Retrieve the planner and task data to update the page
             # Use temporary ID 1 (TODO: change when user accounts are added)
             task_data = retrieve_task_data(1)
             planner_data = retrieve_planner_data(1)
+
             planner_ = Planner(planner_data[0][1], planner_data[0][2])
             weeks = planner_.create_weeks()
-
-            # Create a list of tasks to be returned to the html file
             task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
 
             return render_template("/planner.html", weeks=weeks, task_data=task_list)
