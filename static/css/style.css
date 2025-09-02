@@ -35,3 +35,7 @@ button {
   cursor: pointer;
   margin-left: 10px;
 }
+.edit-button {
+  float: right;
+  color: black;
+}

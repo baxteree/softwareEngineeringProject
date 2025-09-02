@@ -41,6 +41,18 @@ def retrieve_task_data(planner_id):
 
     return data
 
+# Returns the planner data from the database using a given ID
+# TODO: include user_id as a parameter
+def retrieve_planners():
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+    # TODO: change query to only select planners for a given user
+    # -> ("SELECT planner_id FROM plannerMap WHERE user_id = (?)", (user_id,)).fetchall()
+    data = cur.execute("SELECT planner_id FROM planner").fetchall()
+    con.close()
+
+    return data
+
 # Function to sanitise text using the html library
 def make_web_safe(string: str) -> str:
     return html.escape(string)

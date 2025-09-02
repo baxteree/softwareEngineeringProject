@@ -11,6 +11,7 @@ import logging
 from planner_handling import Planner, Task, make_task_list
 from data_handing import insert_planner_data, retrieve_planner_data
 from data_handing import insert_task_data, retrieve_task_data
+from data_handing import retrieve_planners
 
 import userManagement as dbHandler
 
@@ -67,43 +68,67 @@ def index():
 
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
+    planners = retrieve_planners()
+
     if request.method == "POST":
         form_type = request.form.get("form_type")
         
-        # Use temporary ID 1 (TODO: change when user accounts are added)
         if form_type == "planner_form":
+            # Temporary default to ID 1 (TODO: change when user accounts are added)
+            chosen_planner = request.form.get("selected_planner", 1)
             start_date = request.form.get("start_date")
             num_weeks = request.form.get("num_weeks")
 
             # Insert the new planner into the database
-            insert_planner_data(1, start_date, num_weeks)
+            insert_planner_data(chosen_planner, start_date, num_weeks)
             
             # Retrieve the planner and task data to update the page
             planner_ = Planner(start_date, num_weeks)
             weeks = planner_.create_weeks()
             task_data = retrieve_task_data(1)
+            # TODO: remove debug prints
+            # TODO: figure out a way to get the task id into the html file
+            print(task_data)
             task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
+            print("hello")
+            print(task_list)
             
-            return render_template("/planner.html", weeks=weeks, task_data=task_list)
+            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
         
         elif form_type == "task_form":
+            # Temporary default to ID 1 (TODO: change when user accounts are added)
+            chosen_planner = request.form.get("selected_planner", 1)
             title = request.form.get("title")
             description = request.form.get("description")
             due_date = request.form.get("due_date")
 
             # Insert the new task into the database
-            insert_task_data(1, title, description, due_date)
+            insert_task_data(chosen_planner, title, description, due_date)
             
             # Retrieve the planner and task data to update the page
-            # Use temporary ID 1 (TODO: change when user accounts are added)
-            task_data = retrieve_task_data(1)
-            planner_data = retrieve_planner_data(1)
+            task_data = retrieve_task_data(chosen_planner)
+            planner_data = retrieve_planner_data(chosen_planner)
 
             planner_ = Planner(planner_data[0][1], planner_data[0][2])
             weeks = planner_.create_weeks()
             task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
 
-            return render_template("/planner.html", weeks=weeks, task_data=task_list)
+            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
+        
+        elif form_type == "planner_select":
+            # Temporary default to ID 1 (TODO: change when user accounts are added)
+            chosen_planner = request.form.get("selected_planner", 1)
+            planner_data = retrieve_planner_data(chosen_planner)
+
+            start_date = planner_data[0][1]
+            num_weeks = planner_data[0][2]
+
+            planner_ = Planner(start_date, num_weeks)
+            weeks = planner_.create_weeks()
+            task_data = retrieve_task_data(chosen_planner)
+            task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
+
+            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
 
     # If the page was loaded using GET
     if request.method == "GET":
@@ -115,6 +140,8 @@ def planner():
 
         # Planner data returned from the database is looks like [(id, num_weeks, start_date)]
         if planner_data is not None:
+            planner_data = retrieve_planner_data(1)
+
             start_date = planner_data[0][1]
             num_weeks = planner_data[0][2]
 
@@ -127,11 +154,11 @@ def planner():
                 # Create a list of tasks to be returned to the html file
                 task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
 
-                return render_template("/planner.html", weeks=weeks, task_data=task_list)
+                return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners)
             
-            return render_template("/planner.html", weeks=weeks)
-        
-    return render_template("/planner.html", weeks=None, task_data=None)
+            return render_template("/planner.html", weeks=weeks, planners=planners)
+
+    return render_template("/planner.html", weeks=None, task_data=None, planners=planners)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():

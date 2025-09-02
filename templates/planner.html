@@ -2,11 +2,43 @@
 <div class="container">
   <div class="row">
     <h1 class="display-1">Planner</h1>
+    <form method="POST">
+        <input type="hidden" name="form_type" value="planner_select" />
+        <label>Choose planner:</label>
+        <select name="chosen_planner" required>
+          {% for planner in planners %}
+          <option value="{{ planner }}">{{ planner[0] }}</option>
+          {% endfor %}
+        </select>
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+  </div>
+  <div class="parent">
+    <div class="child inline">
+      <form method="POST">
+        <input type="hidden" name="form_type" value="invite_form" />
+        <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
+        <h2>Invite form</h2>
+        
+        <label>Invite user:</label>
+        <input type="text" name="invite_id" required />
+        <br/>
+        <label>(Use their invite ID)</label>
+        <br/>
+        <br/>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
   <div class="parent">
     <div class="child inline">
       <form method="POST">
         <input type="hidden" name="form_type" value="planner_form" />
+        <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
+        <p>{{ current_planner }}</p>
         <h2>Planner Info</h2>
         <label>Template type:</label>
         <select name="template_type" required>
@@ -47,7 +79,7 @@
     <div class="task">
       <h4>{{ task[0] }}</h4>
       <p>{{ task[1] }}</p>
-  </div>
+    </div>
   </div>
   {% endif %} {% endfor %} {% if weeks %}
   <br /><br />
