@@ -29,6 +29,19 @@
   <div class="parent">
     <div class="child inline">
       <form method="POST">
+        <input type="hidden" name="form_type" value="create_planner_form" />
+        <h2>Create new planner</h2>
+        
+        <label>Planner name:</label>
+        <input type="text" name="planner_name" required />
+        <br/>
+        <br/>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="child inline">
+      <form method="POST">
         <input type="hidden" name="form_type" value="invite_form" />
         <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
         <h2>Invite form</h2>
@@ -36,7 +49,7 @@
         <label>Invite user:</label>
         <input type="text" name="invite_id" required />
         <br/>
-        <label>(Use their invite ID)</label>
+        <p>(Use their invite ID)</p>
         <br/>
         <br/>
 
@@ -84,6 +97,7 @@
     </div>
   </div>
   <br /><br />
+  {% if task_data %}
   <h2>General tasks</h2>
   {% for task in task_data %} {% if task[3] == 'general' %}
   <div class="weeks-list">
@@ -106,6 +120,10 @@
     </div>
       {% endif %} {% endfor %} {% endfor %}
     </div>
+    {% endif %}
+    {% else %}
+    <hr />
+    <p class="blue">Create a planner by entering a name in the form above, and pressing submit.</p>
     {% endif %}
   </div>
 </div>

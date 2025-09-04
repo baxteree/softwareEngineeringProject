@@ -66,8 +66,9 @@ def make_task_list(task_data, start_date, num_weeks):
 
 # Renders the planner page given a chosen planner and the list of planner IDs
 def render_planner_page(chosen_planner, planner_ids):
+
     planner_data = retrieve_planner_data(chosen_planner)
-    if not planner_data:
+    if not planner_data or chosen_planner == False:
         return render_template("/planner.html", weeks=None, task_data=None, planners=planner_ids, current_planner=chosen_planner)
     start_date = planner_data[0][1]
     num_weeks = planner_data[0][2]

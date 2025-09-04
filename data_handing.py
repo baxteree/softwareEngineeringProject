@@ -121,16 +121,13 @@ def retrieve_task_data(planner_id):
     return data
 
 # Returns the planner data from the database using a given ID
-# TODO: include user_id as a parameter
-def retrieve_planners():
+def retrieve_planners(user_id):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
-    # TODO: change query to only select planners for a given user
-    # -> ("SELECT planner_id FROM plannerMap WHERE user_id = (?)", (user_id,)).fetchall()
-    data = cur.execute("SELECT planner_id FROM planner").fetchall()
+    data = cur.execute("SELECT planner_id FROM plannerMap WHERE user_id = (?)", (user_id,)).fetchall()
     con.close()
 
-    # Flatten the list of tuples into a list of values
+    # Flattens the list of tuples into a list of values
     data = [row[0] for row in data]
 
     return data

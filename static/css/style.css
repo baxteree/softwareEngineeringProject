@@ -8,6 +8,9 @@ h3 {
 .success-msg {
   color: green;
 }
+.blue {
+  color: rgb(21, 82, 144);
+}
 .task {
   width: 400px;
   border: 2px solid rgb(168, 204, 239);

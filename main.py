@@ -97,10 +97,10 @@ def planner():
         return redirect("/login.html")
     
     user_id = session["user_id"]
-    print(user_id)
     
-    planner_ids = retrieve_planners()
-    chosen_planner = 1  # Default to ID 1, change when user accounts are added
+    planner_ids = retrieve_planners(user_id)
+    # The chosen planner defaults to the first planner in the list, or is 'False' if there are no planners
+    chosen_planner = planner_ids[0] if planner_ids else False
 
     if request.method == "POST":
         form_type = request.form.get("form_type")
@@ -122,6 +122,13 @@ def planner():
 
         elif form_type == "invite_form":
             invite_id = request.form.get("invite_id")
+            # TODO
+            print(invite_id)
+
+        elif form_type == "create_planner_form":
+            planner_name = request.form.get("planner_name")
+            # TODO
+            print(planner_name)
         
         return render_planner_page(chosen_planner, planner_ids)
 
