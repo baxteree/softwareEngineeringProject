@@ -7,7 +7,9 @@ from flask_csp.csp import csp_header
 import logging
 
 from planner_handling import render_planner_page
-from data_handing import insert_user_data, retrieve_user_data, insert_planner_data, insert_task_data, retrieve_planners
+from data_handling import insert_user_data, retrieve_user_data, get_invite_code, get_users, invite_user
+from data_handling import insert_planner_data, update_planner_data, get_planner_ids, retrieve_planners
+from data_handling import insert_task_data
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -98,42 +100,47 @@ def planner():
     
     user_id = session["user_id"]
     
-    planner_ids = retrieve_planners(user_id)
+    planner_ids = get_planner_ids(user_id)
     # The chosen planner defaults to the first planner in the list, or is 'False' if there are no planners
-    chosen_planner = planner_ids[0] if planner_ids else False
+    chosen_planner_id = planner_ids[0] if planner_ids else False
+
+    planner_data = retrieve_planners(user_id)
+
+    users_invite_id = get_invite_code(user_id)
 
     if request.method == "POST":
         form_type = request.form.get("form_type")
         if form_type == "planner_form":
-            chosen_planner = int(request.form.get("selected_planner", 1))
+            chosen_planner_id = int(request.form.get("selected_planner", 1))
+            planner_name = request.form.get("planner_name")
             start_date = request.form.get("start_date")
             num_weeks = request.form.get("num_weeks")
-            insert_planner_data(chosen_planner, start_date, num_weeks)
+            update_planner_data(chosen_planner_id, planner_name, start_date, num_weeks)
         
         elif form_type == "task_form":
-            chosen_planner = int(request.form.get("selected_planner", 1))
+            chosen_planner_id = int(request.form.get("selected_planner", 1))
             title = request.form.get("title")
             description = request.form.get("description")
             due_date = request.form.get("due_date")
-            insert_task_data(chosen_planner, title, description, due_date)
+            insert_task_data(chosen_planner_id, title, description, due_date)
         
         elif form_type == "planner_select":
-            chosen_planner = int(request.form.get("chosen_planner"))
+            chosen_planner_id = int(request.form.get("chosen_planner"))
 
         elif form_type == "invite_form":
-            invite_id = request.form.get("invite_id")
-            # TODO
-            print(invite_id)
+            invitation_id = request.form.get("invite_id")
+            invite_user(invitation_id, chosen_planner_id)
 
         elif form_type == "create_planner_form":
-            planner_name = request.form.get("planner_name")
-            # TODO
-            print(planner_name)
+            planner_name = request.form.get("planner_name_input")
+            insert_planner_data(planner_name, user_id)
+            planner_data = retrieve_planners(user_id)
+            chosen_planner_id = planner_data[-1][0] if planner_data else False
         
-        return render_planner_page(chosen_planner, planner_ids)
+        return render_planner_page(chosen_planner_id, planner_data, users_invite_id)
 
     # GET request
-    return render_planner_page(chosen_planner, planner_ids)
+    return render_planner_page(chosen_planner_id, planner_data, users_invite_id)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():

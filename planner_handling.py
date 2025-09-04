@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from data_handing import retrieve_planner_data, retrieve_task_data
+from data_handling import retrieve_planner_data, retrieve_task_data, get_users
 from flask import render_template
 
 class Planner:
@@ -65,15 +65,19 @@ def make_task_list(task_data, start_date, num_weeks):
     return task_list
 
 # Renders the planner page given a chosen planner and the list of planner IDs
-def render_planner_page(chosen_planner, planner_ids):
-
+def render_planner_page(chosen_planner, chosen_planner_data, users_invite_id):
     planner_data = retrieve_planner_data(chosen_planner)
-    if not planner_data or chosen_planner == False:
-        return render_template("/planner.html", weeks=None, task_data=None, planners=planner_ids, current_planner=chosen_planner)
-    start_date = planner_data[0][1]
-    num_weeks = planner_data[0][2]
+    users = get_users(chosen_planner)
+
+    if not planner_data:
+        return render_template("/planner.html", weeks=None, task_data=None, planners=chosen_planner_data, current_planner=chosen_planner, planner_name=None, users=users, users_invite_id=users_invite_id)
+    planner_name = str(planner_data[0][1])
+    start_date = planner_data[0][2]
+    num_weeks = planner_data[0][3]
+    if chosen_planner is False or start_date is None or num_weeks is None:
+        return render_template("/planner.html", weeks=None, task_data=None, planners=chosen_planner_data, current_planner=chosen_planner, planner_name=planner_name, users=users, users_invite_id=users_invite_id)
     planner_ = Planner(start_date, num_weeks)
     weeks = planner_.create_weeks()
     task_data = retrieve_task_data(chosen_planner)
     task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
-    return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planner_ids, current_planner=chosen_planner)
+    return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=chosen_planner_data, current_planner=chosen_planner, planner_name=planner_name, users=users, users_invite_id=users_invite_id)

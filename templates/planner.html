@@ -1,31 +1,50 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
-    <h1 class="display-1">{{ current_planner }}</h1>
+    {% if current_planner %}
+    <h1 class="display-1">{{ planner_name }}</h1>
+    {% else %}
+    <h1 class="display-1">Planners</h1>
+    {% endif %}
     <!-- Debug -->
+    <!--
     <h3>Debug</h3>
     <p>current planner id: {{ current_planner }}</p>
     <p>planners: {{ planners }}</p>
     <p>task data: {{ task_data }}</p>
     <p>weeks: {{ weeks }}</p>
     <p>-------------</p>
+    -->
     <!-- End Debug -->
+    {% if current_planner %}
     <form method="POST">
-        <input type="hidden" name="form_type" value="planner_select" />
-        <label>Choose planner:</label>
-        <select name="chosen_planner" required>
-          <option value={{ current_planner }} selected>{{ current_planner }}</option>
-          {% for planner in planners %}
-            {% if planner != current_planner %}
-            <option value={{ planner }}>{{ planner }}</option>
-            {% endif %}
-          {% endfor %}
-        </select>
-        <br /><br />
+      <input type="hidden" name="form_type" value="planner_select" />
+      <label>Choose planner:</label>
+      <select name="chosen_planner" required>
+        <option value={{ current_planner }} selected>{{ planner_name }}</option>
+        {% for planner in planners %}
+          {% if planner[1] != planner_name %}
+          <option value={{ planner[0] }}>{{ planner[1] }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+      <br /><br />
 
-        <button type="submit">Submit</button>
-      </form>
+      <button type="submit">Select</button><br />
+      <hr />
+    </form>
+    <h1>Current users in planner:</h1>
+    <ul>
+    {% for user in users %}
+      <li>
+        <b>{{ user }}</b>
+      </li>
+    {% endfor %}
+    {% endif %}
+  </ul>
   </div>
+  <br />
+  <hr />
   <div class="parent">
     <div class="child inline">
       <form method="POST">
@@ -33,13 +52,14 @@
         <h2>Create new planner</h2>
         
         <label>Planner name:</label>
-        <input type="text" name="planner_name" required />
-        <br/>
-        <br/>
+        <input type="text" name="planner_name_input" required />
+        <br/><br/>
+        <p class="note">(If your planner isn't being added, try again with a different name. Planner names must be unique.)</p>
 
         <button type="submit">Submit</button>
       </form>
     </div>
+    {% if current_planner %}
     <div class="child inline">
       <form method="POST">
         <input type="hidden" name="form_type" value="invite_form" />
@@ -51,9 +71,10 @@
         <br/>
         <p>(Use their invite ID)</p>
         <br/>
+        <p>Your invite ID: {{ users_invite_id }}</p>
         <br/>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Invite</button>
       </form>
     </div>
   </div>
@@ -62,6 +83,7 @@
       <form method="POST">
         <input type="hidden" name="form_type" value="planner_form" />
         <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
+        <input type="hidden" name="planner_name" value="{{ planner_name }}" />
         <h2>Planner Info</h2>
         <label>Template type:</label>
         <select name="template_type" required>
@@ -75,7 +97,7 @@
         <label>Number of Weeks:</label>
         <input type="number" name="num_weeks" min="1" required /><br /><br />
 
-        <button type="submit">Submit</button>
+        <button type="submit">Update planner</button>
       </form>
     </div>
     <div class="child inline">
@@ -92,13 +114,15 @@
         <label>Due Date:</label>
         <input type="date" name="due_date" required /><br /><br />
 
-        <button type="submit">Submit</button>
+        <button type="submit">Create task</button><br /><br />
+        <p class="note">(Note: tasks will not show until you enter 'planner info')</p>
       </form>
     </div>
   </div>
   <br /><br />
-  {% if task_data %}
+  <hr />
   <h2>General tasks</h2>
+  {% if task_data %}
   {% for task in task_data %} {% if task[3] == 'general' %}
   <div class="weeks-list">
     <div class="task">
@@ -106,25 +130,25 @@
       <p>{{ task[1] }}</p>
     </div>
   </div>
-  {% endif %} {% endfor %} {% if weeks %}
+  {% endif %} {% endfor %} {% endif %} 
+  {% if weeks %}
   <br /><br />
+  <hr />
   <h1>Term</h1>
   <div class="weeks-list">
     {% for week in range(weeks | length) %}
     <h3>Week {{week+1}}: {{ weeks[week] }}</h3>
+    {% if task_data %}
     {% for task in task_data %} {% if task[3] == (week+1) %}
     <div class="task">
       <h4>{{ task[0] }}</h4>
       <p>{{ task[1] }}</p>
       <p><b>Due:</b> {{ task[2] }}</p>
     </div>
-      {% endif %} {% endfor %} {% endfor %}
+      {% endif %} {% endfor %} {% endif %} {% endfor %}
     </div>
     {% endif %}
-    {% else %}
-    <hr />
-    <p class="blue">Create a planner by entering a name in the form above, and pressing submit.</p>
-    {% endif %}
   </div>
+  {% endif %}
 </div>
 {% endblock %}

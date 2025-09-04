@@ -11,6 +11,10 @@ h3 {
 .blue {
   color: rgb(21, 82, 144);
 }
+.note {
+  font-style: italic;
+  color: grey;
+}
 .task {
   width: 400px;
   border: 2px solid rgb(168, 204, 239);
@@ -33,7 +37,7 @@ h3 {
   padding: 1rem;
 }
 .child {
-  width: 400px;
+  width: 450px;
   border: 1px solid rgb(168, 204, 239);
   padding: 1rem;
 }

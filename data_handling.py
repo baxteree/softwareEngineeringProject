@@ -79,13 +79,34 @@ def retrieve_user_data(username, password):
             return user_id
 
 
-# Inserts new planner data if it does not exist, or replaces it if it does
-def insert_planner_data(planner_id, start_date, num_weeks):
+# Inserts new planner data if it does not exist
+def insert_planner_data(planner_name, user_id):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
 
-    cur.execute("INSERT OR REPLACE INTO planner (planner_id, planner_weeks, planner_start_date) VALUES (?, ?, ?)", 
-                (planner_id, num_weeks, start_date))
+    # Sanitise inputs
+    safe_name = make_web_safe(planner_name)
+
+    # Check if the planner already exists
+    planners = cur.execute("SELECT planner_name FROM planner WHERE planner_name = (?)", (safe_name,)).fetchall()
+    if planners:
+        con.close()
+        return
+
+    cur.execute("INSERT INTO planner (planner_name, planner_start_date, planner_weeks) VALUES (?, ?, ?)", 
+                (safe_name, None, None))
+    cur.execute("INSERT INTO plannerMap (user_id, planner_id) VALUES (?, ?)", 
+                (user_id, cur.lastrowid))
+    con.commit()
+    con.close()
+
+# Updates planner data
+def update_planner_data(planner_id, planner_name, start_date, num_weeks):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+
+    cur.execute("REPLACE INTO planner (planner_id, planner_name, planner_weeks, planner_start_date) VALUES (?, ?, ?, ?)", 
+                (planner_id, planner_name, num_weeks, start_date))
     con.commit()
     con.close()
 
@@ -124,13 +145,66 @@ def retrieve_task_data(planner_id):
 def retrieve_planners(user_id):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
+    data = cur.execute("SELECT planner.planner_id, planner.planner_name FROM planner JOIN plannerMap ON plannerMap.planner_id = planner.planner_id WHERE user_id = (?)", (user_id,)).fetchall()
+    con.close()
+
+    return data
+
+# Returns just the planner ID from the database using a given user ID
+def get_planner_ids(user_id):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
     data = cur.execute("SELECT planner_id FROM plannerMap WHERE user_id = (?)", (user_id,)).fetchall()
     con.close()
 
-    # Flattens the list of tuples into a list of values
-    data = [row[0] for row in data]
+    data = [item[0] for item in data]
 
     return data
+
+def invite_user(invite_code, planner_id):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+
+    user_id = cur.execute("SELECT user_id FROM users WHERE invite_code = (?)", (invite_code,)).fetchall()
+    user_id = user_id[0][0] if user_id else None
+
+    if not user_id:
+        con.close()
+        return False
+    
+    cur.execute("INSERT INTO plannerMap (user_id, planner_id) VALUES (?, ?)", (user_id, planner_id))
+    con.commit()
+    con.close()
+    return True
+
+def get_users(planner_id):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+
+    if not planner_id:
+        con.close()
+        return []
+
+    users = cur.execute("SELECT users.username FROM users JOIN plannerMap ON plannerMap.user_id = users.user_id WHERE plannerMap.planner_id = (?)", (planner_id,)).fetchall()
+    con.close()
+
+    users = [user[0] for user in users]
+
+    return users
+
+def get_invite_code(user_id):
+    con = sql.connect("databaseFiles/database.db")
+    cur = con.cursor()
+
+    invite_code = cur.execute("SELECT invite_code FROM users WHERE user_id = (?)", (user_id,)).fetchall()
+    con.close()
+
+    invite_code = invite_code[0][0] if invite_code else None
+
+    if invite_code:
+        return invite_code
+    else:
+        return None
 
 # Function to sanitise text using the html library
 def make_web_safe(string: str) -> str:
