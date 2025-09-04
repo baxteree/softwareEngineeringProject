@@ -1,0 +1,21 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Log in</h1>
+    <hr />
+    <form method="POST">
+      <label>Username:</label>
+      <input type="text" name="username" required /><br /><br />
+
+      <label>Password:</label>
+      <input type="password" name="password" required /><br /><br />
+
+      <button type="submit">Log in</button>
+    </form>
+  </div>
+  {% if success %}
+  <br />
+  <p class="success-msg">You are now logged in.</p>
+  {% endif %}
+</div>
+{% endblock %}

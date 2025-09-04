@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
-
+from data_handing import retrieve_planner_data, retrieve_task_data
+from flask import render_template
 
 class Planner:
     def __init__(self, start_date, num_weeks):
@@ -63,14 +64,15 @@ def make_task_list(task_data, start_date, num_weeks):
         task_list.append(task_.create_task(start_date, num_weeks))
     return task_list
 
-# Create a test planner
-# test = Planner("2023-10-01", 4)
-
-# Print a list of start dates for each week
-# print(test.create_weeks())
-
-# Create a test task
-# test2 = Task("Test Task", "This is a test task", "2023-11-11")
-
-# Print a list of attributes of the task
-# print(test2.create_task(test.return_start_date(), test.return_weeks()))
+# Renders the planner page given a chosen planner and the list of planner IDs
+def render_planner_page(chosen_planner, planner_ids):
+    planner_data = retrieve_planner_data(chosen_planner)
+    if not planner_data:
+        return render_template("/planner.html", weeks=None, task_data=None, planners=planner_ids, current_planner=chosen_planner)
+    start_date = planner_data[0][1]
+    num_weeks = planner_data[0][2]
+    planner_ = Planner(start_date, num_weeks)
+    weeks = planner_.create_weeks()
+    task_data = retrieve_task_data(chosen_planner)
+    task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
+    return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planner_ids, current_planner=chosen_planner)

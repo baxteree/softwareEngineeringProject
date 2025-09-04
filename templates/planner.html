@@ -1,13 +1,24 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
-    <h1 class="display-1">Planner</h1>
+    <h1 class="display-1">{{ current_planner }}</h1>
+    <!-- Debug -->
+    <h3>Debug</h3>
+    <p>current planner id: {{ current_planner }}</p>
+    <p>planners: {{ planners }}</p>
+    <p>task data: {{ task_data }}</p>
+    <p>weeks: {{ weeks }}</p>
+    <p>-------------</p>
+    <!-- End Debug -->
     <form method="POST">
         <input type="hidden" name="form_type" value="planner_select" />
         <label>Choose planner:</label>
         <select name="chosen_planner" required>
+          <option value={{ current_planner }} selected>{{ current_planner }}</option>
           {% for planner in planners %}
-          <option value="{{ planner }}">{{ planner[0] }}</option>
+            {% if planner != current_planner %}
+            <option value={{ planner }}>{{ planner }}</option>
+            {% endif %}
           {% endfor %}
         </select>
         <br /><br />
@@ -38,7 +49,6 @@
       <form method="POST">
         <input type="hidden" name="form_type" value="planner_form" />
         <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
-        <p>{{ current_planner }}</p>
         <h2>Planner Info</h2>
         <label>Template type:</label>
         <select name="template_type" required>
@@ -58,6 +68,7 @@
     <div class="child inline">
       <form method="POST">
         <input type="hidden" name="form_type" value="task_form" />
+        <input type="hidden" name="selected_planner" value="{{ current_planner }}" />
         <h2>Task Info</h2>
         <label>Title:</label>
         <input type="text" name="title" required /><br /><br />
@@ -97,5 +108,5 @@
     </div>
     {% endif %}
   </div>
-  {% endblock %}
 </div>
+{% endblock %}

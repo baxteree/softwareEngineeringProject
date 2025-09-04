@@ -2,18 +2,12 @@ from flask import Flask
 from flask import redirect
 from flask import render_template
 from flask import request
-from flask import jsonify
-import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
 import logging
 
-from planner_handling import Planner, Task, make_task_list
-from data_handing import insert_planner_data, retrieve_planner_data
-from data_handing import insert_task_data, retrieve_task_data
-from data_handing import retrieve_planners
-
-import userManagement as dbHandler
+from planner_handling import render_planner_page
+from data_handing import insert_user_data, retrieve_user_data, insert_planner_data, insert_task_data, retrieve_planners
 
 # Code snippet for logging a message
 # app.logger.critical("message")
@@ -38,9 +32,9 @@ app.config['WTF_CSRF_ENABLED'] = False
 @app.route("/index.asp", methods=["GET"])
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
+
 def root():
     return redirect("/", 302)
-
 
 @app.route("/", methods=["POST", "GET"])
 @csp_header(
@@ -66,104 +60,65 @@ def root():
 def index():
     return render_template("/index.html")
 
+@app.route("/signup.html", methods=["POST", "GET"])
+def signup():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        # Insert the new user into the database
+        insert_user_data(username, password)
+
+        return render_template("/signup.html", success=True)
+
+    return render_template("/signup.html")
+
+@app.route("/login.html", methods=["POST", "GET"])
+def login():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        # Gets the user id if the user exists and the password is correct
+        user_id = retrieve_user_data(username, password)
+        if user_id:
+            return render_template("/planner.html", user_id=user_id)
+
+        return render_template("/login.html")
+
+    return render_template("/login.html")
+
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
-    planners = retrieve_planners()
+    planner_ids = retrieve_planners()
+    chosen_planner = 1  # Default to ID 1, change when user accounts are added
 
     if request.method == "POST":
         form_type = request.form.get("form_type")
-        
         if form_type == "planner_form":
-            # Temporary default to ID 1 (TODO: change when user accounts are added)
-            chosen_planner = request.form.get("selected_planner", 1)
+            chosen_planner = int(request.form.get("selected_planner", 1))
             start_date = request.form.get("start_date")
             num_weeks = request.form.get("num_weeks")
-
-            # Insert the new planner into the database
             insert_planner_data(chosen_planner, start_date, num_weeks)
-            
-            # Retrieve the planner and task data to update the page
-            planner_ = Planner(start_date, num_weeks)
-            weeks = planner_.create_weeks()
-            task_data = retrieve_task_data(1)
-            # TODO: remove debug prints
-            # TODO: figure out a way to get the task id into the html file
-            print(task_data)
-            task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
-            print("hello")
-            print(task_list)
-            
-            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
         
         elif form_type == "task_form":
-            # Temporary default to ID 1 (TODO: change when user accounts are added)
-            chosen_planner = request.form.get("selected_planner", 1)
+            chosen_planner = int(request.form.get("selected_planner", 1))
             title = request.form.get("title")
             description = request.form.get("description")
             due_date = request.form.get("due_date")
-
-            # Insert the new task into the database
             insert_task_data(chosen_planner, title, description, due_date)
-            
-            # Retrieve the planner and task data to update the page
-            task_data = retrieve_task_data(chosen_planner)
-            planner_data = retrieve_planner_data(chosen_planner)
-
-            planner_ = Planner(planner_data[0][1], planner_data[0][2])
-            weeks = planner_.create_weeks()
-            task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
-
-            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
         
         elif form_type == "planner_select":
-            # Temporary default to ID 1 (TODO: change when user accounts are added)
-            chosen_planner = request.form.get("selected_planner", 1)
-            planner_data = retrieve_planner_data(chosen_planner)
-
-            start_date = planner_data[0][1]
-            num_weeks = planner_data[0][2]
-
-            planner_ = Planner(start_date, num_weeks)
-            weeks = planner_.create_weeks()
-            task_data = retrieve_task_data(chosen_planner)
-            task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
-
-            return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners, current_planner=chosen_planner)
-
-    # If the page was loaded using GET
-    if request.method == "GET":
-        # Retrieve planner data from the database if it exists
+            chosen_planner = int(request.form.get("chosen_planner"))
         
-        # Use temporary ID 1 (TODO: change when user accounts are added)
-        planner_data = retrieve_planner_data(1)
-        task_data = retrieve_task_data(1)
+        return render_planner_page(chosen_planner, planner_ids)
 
-        # Planner data returned from the database is looks like [(id, num_weeks, start_date)]
-        if planner_data is not None:
-            planner_data = retrieve_planner_data(1)
-
-            start_date = planner_data[0][1]
-            num_weeks = planner_data[0][2]
-
-            planner_ = Planner(start_date, num_weeks)
-            weeks = planner_.create_weeks()
-
-            # Task data returned from the database looks like 
-            # [(task_id, task_planner_id, title, description, due_date)]
-            if task_data is not None:
-                # Create a list of tasks to be returned to the html file
-                task_list = make_task_list(task_data, planner_.return_start_date(), planner_.return_weeks())
-
-                return render_template("/planner.html", weeks=weeks, task_data=task_list, planners=planners)
-            
-            return render_template("/planner.html", weeks=weeks, planners=planners)
-
-    return render_template("/planner.html", weeks=None, task_data=None, planners=planners)
+    # GET request
+    return render_planner_page(chosen_planner, planner_ids)
 
 @app.route("/privacy.html", methods=["GET"])
 def privacy():
     return render_template("/privacy.html")
-
 
 # example CSRF protected form
 @app.route("/form.html", methods=["POST", "GET"])
