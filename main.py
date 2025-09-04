@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, session
 from flask import redirect
 from flask import render_template
 from flask import request
@@ -58,6 +58,8 @@ def root():
     }
 )
 def index():
+    if "user_id" not in session:
+        return redirect("/login.html")
     return render_template("/index.html")
 
 @app.route("/signup.html", methods=["POST", "GET"])
@@ -82,7 +84,8 @@ def login():
         # Gets the user id if the user exists and the password is correct
         user_id = retrieve_user_data(username, password)
         if user_id:
-            return render_template("/planner.html", user_id=user_id)
+            session["user_id"] = user_id
+            return render_template("/index.html")
 
         return render_template("/login.html")
 
@@ -90,6 +93,12 @@ def login():
 
 @app.route("/planner.html", methods=["POST", "GET"])
 def planner():
+    if "user_id" not in session:
+        return redirect("/login.html")
+    
+    user_id = session["user_id"]
+    print(user_id)
+    
     planner_ids = retrieve_planners()
     chosen_planner = 1  # Default to ID 1, change when user accounts are added
 
@@ -110,6 +119,9 @@ def planner():
         
         elif form_type == "planner_select":
             chosen_planner = int(request.form.get("chosen_planner"))
+
+        elif form_type == "invite_form":
+            invite_id = request.form.get("invite_id")
         
         return render_planner_page(chosen_planner, planner_ids)
 
@@ -130,6 +142,10 @@ def form():
     else:
         return render_template("/form.html")
 
+@app.route("/logout.html", methods=["GET"])
+def logout():
+    session.pop("user_id", None)  # remove user_id from session
+    return render_template("/logout.html")
 
 # Endpoint for logging CSP violations
 @app.route("/csp_report", methods=["POST"])
